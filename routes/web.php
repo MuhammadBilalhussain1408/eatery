@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\MembershipController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,5 +22,6 @@ Route::view('/membership-subscription', 'components.membership');
 Route::view('/about-us', 'components.about');
 
 
+Route::post('/save-membership', [MembershipController::class, 'store']);
 Route::get('/contact', [ContactFormController::class, 'viewContactForm']);
 Route::post('/contact', [ContactFormController::class, 'ContactForm'])->name('contact');
