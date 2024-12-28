@@ -228,7 +228,7 @@
                                                 <span>Other (please specify)</span>
                                             </label>
                                             <div>
-                                                <input type="text" name="servicesOtherVal" required id="other-service-input" placeholder="Please specify..." style="display: none; margin-top: 10px;">
+                                                <input type="text" name="servicesOtherVal" id="other-service-input" placeholder="Please specify..." style="display: none; margin-top: 10px;">
                                                 {{-- <input type="text" name="" id=""> --}}
                                             </div>
                                         </div>
