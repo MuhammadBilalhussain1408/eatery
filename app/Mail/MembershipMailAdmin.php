@@ -25,7 +25,7 @@ class MembershipMailAdmin extends Mailable
     public function build()
     {
         $data = $this->membershipDetails->toArray();
-        $subject = 'Membership mail';
+        $subject = 'New 80/20 CEO Membership Form';
         return $this->subject($subject)
                     ->view('components.mail-layouts.admin_membership', compact('data'));
     }

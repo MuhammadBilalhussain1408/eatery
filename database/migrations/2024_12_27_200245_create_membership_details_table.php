@@ -13,18 +13,18 @@ return new class extends Migration
     {
         Schema::create('membership_details', function (Blueprint $table) {
             $table->id();
-            $table->text('name');
-            $table->text('email');
-            $table->text('phone');
-            $table->text('interested_in_use');
-            $table->text('is_becoming_member');
-            $table->text('membershipType');
-            $table->text('assistence');
-            $table->text('services');
-            $table->text('goals');
-            $table->text('current_project');
-            $table->text('current_projectVal');
-            $table->text('tour');
+            $table->text('name')->nullable();
+            $table->text('email')->nullable();
+            $table->text('phone')->nullable();
+            $table->text('interested_in_use')->nullable();
+            $table->text('is_becoming_member')->nullable();
+            $table->text('membershipType')->nullable();
+            $table->text('assistence')->nullable();
+            $table->text('services')->nullable();
+            $table->text('goals')->nullable();
+            $table->text('current_project')->nullable();
+            $table->text('current_projectVal')->nullable();
+            $table->text('tour')->nullable();
             $table->text('about');
             $table->timestamps();
         });

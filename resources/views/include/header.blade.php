@@ -186,6 +186,9 @@
         a:hover {
             color: #ffff00;
         }
+        .text-orange{
+            color: #e2612e !important;
+        }
 
 
 

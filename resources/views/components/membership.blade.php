@@ -29,6 +29,17 @@
         .contact-form-3 label {
             font-size: 28px;
         }
+        .contact-form-3 input, .contact-form-3 textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border-bottom: none;
+            color: #ffffff;
+            font-size: 16px;
+            outline: none;
+            margin-bottom: 10px;
+            border: 1px solid white;
+        }
 
         /*For Mobiles*/
 
@@ -74,28 +85,34 @@
                     </div>
                     <div class="col-lg-12 pt-4" style="box-shadow: 0px 0px 30px 0px rgb(255 255 255 / 20%);padding: 3rem;">
                         <div class="contact-form-3">
-                            <form action="{{url('save-membership')}}" method="post">
+                            <form onsubmit="return checkForm(this);" action="{{url('save-membership')}}" method="post">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="name">Full Name</label>
-                                            <input type="text" id="name" name="name"
-                                                placeholder="What's your full name?*" required>
+                                            <input type="text"
+                                                   id="name"
+                                                   name="name"
+                                                   placeholder="What's your full name?*" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="email">Email Address</label>
-                                            <input type="email" id="email" name="email"
-                                                placeholder="What's your email?*" required>
+                                            <input type="email"
+                                                   id="email"
+                                                   name="email"
+                                                   placeholder="What's your email?*" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="phone">Phone Number</label>
-                                            <input type="tel" id="phone" name="phone"
-                                                placeholder="What's your phone number?*" required>
+                                            <input type="tel"
+                                                   id="phone"
+                                                   name="phone"
+                                                   placeholder="What's your phone number?*" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -103,28 +120,33 @@
                                             <label class="pb-3">Why are you interested in becoming an 80/20 CEO
                                                 member?</label>
                                             <label class="budget-option">
-                                                <input type="radio" name="is_becoming_member1"
-                                                    value="Investment opportunities">
+                                                <input type="checkbox"
+                                                       name="is_becoming_member1"
+                                                       value="Investment opportunities">
                                                 <span>Investment opportunities</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="is_becoming_member2"
-                                                    value="Selling product & services">
+                                                <input type="checkbox"
+                                                       name="is_becoming_member2"
+                                                       value="Selling product & services">
                                                 <span>Selling product & services</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="is_becoming_member3"
-                                                    value="Health benefits">
+                                                <input type="checkbox"
+                                                       name="is_becoming_member3"
+                                                       value="Health benefits">
                                                 <span>Health benefits</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="is_becoming_member4"
-                                                    value="Brand promotion">
+                                                <input type="checkbox"
+                                                       name="is_becoming_member4"
+                                                       value="Brand promotion">
                                                 <span>Brand promotion</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="is_becoming_member5"
-                                                    value="Partnerships / Collaborations">
+                                                <input type="checkbox"
+                                                       name="is_becoming_member5"
+                                                       value="Partnerships / Collaborations">
                                                 <span>Partnerships / Collaborations</span>
                                             </label>
                                         </div>
@@ -133,23 +155,38 @@
                                         <div class="budget-options form-group">
                                             <label class="pb-3">What type of Membership are you looking for?</label>
                                             <label class="budget-option">
-                                                <input type="radio" name="membership1" class="membership-option" value="Restaurant discounts">
+                                                <input type="checkbox"
+                                                       name="membership1"
+                                                       class="membership-option"
+                                                       value="Restaurant discounts">
                                                 <span>Restaurant discounts</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="membership2" class="membership-option" value="Private Office">
+                                                <input type="checkbox"
+                                                       name="membership2"
+                                                       class="membership-option"
+                                                       value="Private Office">
                                                 <span>Private Office</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="membership3" class="membership-option" value="Shared Workspace">
+                                                <input type="checkbox"
+                                                       name="membership3"
+                                                       class="membership-option"
+                                                       value="Shared Workspace">
                                                 <span>Shared Workspace</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="membership4" class="membership-option" value="Event Space">
+                                                <input type="checkbox"
+                                                       name="membership4"
+                                                       class="membership-option"
+                                                       value="Event Space">
                                                 <span>Event Space</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="membership5"  id="not-sure" value="Not sure yet">
+                                                <input type="checkbox"
+                                                       name="membership5"
+                                                       id="not-sure"
+                                                       value="Not sure yet">
                                                 <span>Not sure yet</span>
                                             </label>
                                         </div>
@@ -159,11 +196,15 @@
                                             <label class="pb-3">Are you interested in using the 80/20 Eatery as your
                                                 business address? <br> <span> (Mailbox +$25 monthly)</span></label>
                                             <label class="budget-option">
-                                                <input type="radio" name="interested_in_use" value="Yes">
+                                                <input type="checkbox"
+                                                       name="interested_in_use"
+                                                       value="Yes">
                                                 <span>Yes</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="interested_in_use" value="No">
+                                                <input type="checkbox"
+                                                       name="interested_in_use"
+                                                       value="No">
                                                 <span>No</span>
                                             </label>
                                         </div>
@@ -172,24 +213,38 @@
                                         <div class="budget-options form-group">
                                             <label class="pb-3">Do you need assistance with any of the following?</label>
                                             <label class="budget-option">
-                                                <input type="radio" name="assistance1" class="assistance-option"
-                                                    value="Website Creation or Redesign">
+                                                <input type="checkbox"
+                                                       name="assistance1"
+                                                       class="assistance-option"
+                                                       value="Website Creation or Redesign">
                                                 <span>Website Creation or Redesign</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="assistance2" class="assistance-option" value="Branding or Marketing">
+                                                <input type="checkbox"
+                                                       name="assistance2"
+                                                       class="assistance-option"
+                                                       value="Branding or Marketing">
                                                 <span>Branding or Marketing</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="assistance3" class="assistance-option" value="Business Coaching">
+                                                <input type="checkbox"
+                                                       name="assistance3"
+                                                       class="assistance-option"
+                                                       value="Business Coaching">
                                                 <span>Business Coaching</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="assistanceOther" id="other-checkbox" value="Other (please specify)">
+                                                <input type="checkbox"
+                                                       name="assistanceOther"
+                                                       id="other-checkbox"
+                                                       value="Other (please specify)">
                                                 <span>Other (please specify)</span>
                                             </label>
                                             <div>
-                                                <input type="text" id="other-input" name="assistanceOtherVal" placeholder="Please specify..." style="display: none; margin-top: 10px;">
+                                                <input type="text"
+                                                       id="other-input"
+                                                       name="assistanceOtherVal"
+                                                       placeholder="Please specify..." style="display: none; margin-top: 10px;">
                                                 {{-- <input type="text" name="" id=""> --}}
                                             </div>
                                         </div>
@@ -199,36 +254,59 @@
                                             <label class="pb-3">What services or amenities are most important to
                                                 you?</label>
                                             <label class="budget-option">
-                                                <input type="radio" name="services1" class="services-option" value="Networking Opportunities">
+                                                <input type="checkbox"
+                                                       name="services1"
+                                                       class="services-option"
+                                                       value="Networking Opportunities">
                                                 <span>Networking Opportunities</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="services2" class="services-option" value="Educational Workshops">
+                                                <input type="checkbox"
+                                                       name="services2"
+                                                       class="services-option"
+                                                       value="Educational Workshops">
                                                 <span>Educational Workshops</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="services3" class="services-option" value="Podcast Studio">
+                                                <input type="checkbox"
+                                                       name="services3"
+                                                       class="services-option"
+                                                       value="Podcast Studio">
                                                 <span>Podcast Studio</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="services4" class="services-option" value="Content Creation Rooms">
+                                                <input type="checkbox"
+                                                       name="services4"
+                                                       class="services-option"
+                                                       value="Content Creation Rooms">
                                                 <span>Content Creation Rooms</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="services5" class="services-option" value="Conference/Meeting Rooms">
+                                                <input type="checkbox"
+                                                       name="services5"
+                                                       class="services-option"
+                                                       value="Conference/Meeting Rooms">
                                                 <span>Conference/Meeting Rooms</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="services5"
-                                                    class="services-option" value="Relaxation Spaces (hookah lounge, juice bar, etc.)">
+                                                <input type="checkbox"
+                                                       name="services5"
+                                                       class="services-option"
+                                                       value="Relaxation Spaces (hookah lounge, juice bar, etc.)">
                                                 <span>Relaxation Spaces (hookah lounge, juice bar, etc.)</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="servicesOther" id="serviceOtherBtn" value="Other (please specify)">
+                                                <input type="checkbox"
+                                                       name="servicesOther"
+                                                       id="serviceOtherBtn"
+                                                       value="Other (please specify)">
                                                 <span>Other (please specify)</span>
                                             </label>
                                             <div>
-                                                <input type="text" name="servicesOtherVal" id="other-service-input" placeholder="Please specify..." style="display: none; margin-top: 10px;">
+                                                <input type="text"
+                                                       name="servicesOtherVal"
+                                                       id="other-service-input"
+                                                       placeholder="Please specify..." style="display: none; margin-top: 10px;">
                                                 {{-- <input type="text" name="" id=""> --}}
                                             </div>
                                         </div>
@@ -238,29 +316,45 @@
                                             <label class="pb-3">What are your goals for joining the 80/20 CEO
                                                 Membership?</label>
                                             <label class="budget-option">
-                                                <input type="radio" name="goal1" class="goal-option" value="Grow my business">
+                                                <input type="checkbox"
+                                                       name="goal1"
+                                                       class="goal-option"
+                                                       value="Grow my business">
                                                 <span>Grow my business</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="goal2" class="goal-option"
-                                                    value="Meet and collaborate with -other entrepreneurs">
+                                                <input type="checkbox"
+                                                       name="goal2"
+                                                       class="goal-option"
+                                                       value="Meet and collaborate with -other entrepreneurs">
                                                 <span>Meet and collaborate with -other entrepreneurs</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="goal3" class="goal-option"
-                                                    value="Access creative and -professional resources">
+                                                <input type="checkbox"
+                                                       name="goal3"
+                                                       class="goal-option"
+                                                       value="Access creative and -professional resources">
                                                 <span>Access creative and -professional resources</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="goal4" class="goal-option" value="Attend events or workshops">
+                                                <input type="checkbox"
+                                                       name="goal4"
+                                                       class="goal-option"
+                                                       value="Attend events or workshops">
                                                 <span>Attend events or workshops</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="goalOther" id="goalOtherBtn" value="Other (please specify)">
+                                                <input type="checkbox"
+                                                       name="goalOther"
+                                                       id="goalOtherBtn"
+                                                       value="Other (please specify)">
                                                 <span>Other (please specify)</span>
                                             </label>
                                             <div>
-                                                <input type="text" name="goalOtherVal" id="other-goal-input" placeholder="Please specify..." style="display: none; margin-top: 10px;">
+                                                <input type="text"
+                                                       name="goalOtherVal"
+                                                       id="other-goal-input"
+                                                       placeholder="Please specify..." style="display: none; margin-top: 10px;">
                                                 {{-- <input type="text" name="" id=""> --}}
                                             </div>
                                         </div>
@@ -270,16 +364,24 @@
                                             <label class="pb-3">Are you currently working on a specific project or
                                                 initiative?</label>
                                             <label class="budget-option">
-                                                <input type="radio" name="current_project" value="No">
+                                                <input type="checkbox"
+                                                       name="current_project"
+                                                       class="specific-project"
+                                                       value="No">
                                                 <span>No</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="radio" name="current_project" id="current_project_yes"
-                                                    value="If yes, please briefly describe it">
+                                                <input type="checkbox"
+                                                       name="current_project"
+                                                       id="current_project_yes"
+                                                       value="If yes, please briefly describe it">
                                                 <span>If yes, please briefly describe it</span>
                                             </label>
                                             <div>
-                                                <input type="text" name="current_projectVal" id="current_projectVal" placeholder="Please specify..." style="display: none; margin-top: 10px;">
+                                                <input type="text"
+                                                       name="current_projectVal"
+                                                       id="current_projectVal"
+                                                       placeholder="Please specify..." style="display: none; margin-top: 10px;">
                                                 {{-- <input type="text" name="" id=""> --}}
                                             </div>
                                         </div>
@@ -288,13 +390,13 @@
                                         <div class="form-group">
                                             <label for="tour">Is there anything specific you’d like to learn or see
                                                 during your tour?</label>
-                                            <textarea id="tour" name="tour" placeholder="Tell something..." rows="3" required></textarea>
+                                            <textarea id="tour" name="tour" placeholder="Tell something..." rows="5" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="about">Anything else you’d like us to know about you?</label>
-                                            <textarea id="about" name="about" placeholder="Tell something..." rows="3" required></textarea>
+                                            <textarea id="about" name="about" placeholder="Tell something..." rows="5" required></textarea>
                                         </div>
                                     </div>
                                     {{--                                    <div class="col-md-6"> --}}
@@ -349,6 +451,7 @@
                 return true;
             };
             document.addEventListener("DOMContentLoaded", function() {
+
                 const options = document.querySelectorAll(".membership-option");
                 const notSureOption = document.getElementById("not-sure");
 
@@ -396,6 +499,7 @@
                         }
                     });
                 });
+
                 const serviceOtherBtn = document.getElementById("serviceOtherBtn");
                 const otherServiceInput = document.getElementById("other-service-input");
                 const Serivce_options = document.querySelectorAll(".services-option");

@@ -29,65 +29,6 @@
             </div>
         </section>
 
-        <!-- contact info area starts -->
-        <section class="contact-info-area pt-110 pb-90">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-top text-center">
-                            <h2 class="title_one text-capitalize text-white"><span>Contact us</span> for a personal experience</h2>
-                            <p class="pt-20 abr-para">
-                                Have questions or need more info? Reach out to us—we’re here to help!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row mt-60">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-info">
-                                    <span class="info-icon"><i class="fa-solid fa-phone-volume"></i></span>
-                                    <h4>Phone</h4>
-                                    <span>(+1) 757-271-4001</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-info active">
-                                    <span class="info-icon"><i class="fa-regular fa-envelope"></i></span>
-                                    <h4>email</h4>
-                                    <span>info@8020eatery.com</span>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-info">
-                                    <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
-                                    <h4>location</h4>
-                                    <span>5725 Northampton Blvd, Virginia</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- cta area starts -->
-        <div class="cta-area py-120">
-            <div class="cta-bg dark-version" style="background-image: url('assets/images/cta-bg.png')"></div>
-            <div class="cta-bg light-version" style="background-image: url(assets/images/cta-light-bg.png)"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <div class="cta-box" style="background-image: url(assets/images/cta-box-bg.png)">
-                            <h2 class="title_one">We’d Love to Hear From You – Let’s Build Connections Together!</h2>
-{{--                            <a href="contact.html" class="primary-btn mt-40">learn more <span><i class="ri-arrow-right-up-line"></i></span></a>--}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- contact form area starts -->
         <section class="contact-form-area pt-110 pb-120">
             <div class="container">

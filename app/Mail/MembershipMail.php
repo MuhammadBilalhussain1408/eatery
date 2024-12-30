@@ -24,7 +24,7 @@ class MembershipMail extends Mailable
     public function build()
     {
         $data = $this->membershipDetails->toArray();
-        $subject = 'Thank you mail';
+        $subject = 'Thank you for Submitting your Information';
         return $this->subject($subject)
                     ->view('components.mail-layouts.customer_membership', compact('data'));
     }

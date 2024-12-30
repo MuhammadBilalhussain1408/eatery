@@ -19,18 +19,34 @@
             </div>
         </section>
 
-        <!-- welcome section starts -->
+        <!-- about section starts -->
         <section class="welcome-section-about pt-110 pb-80">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-top">
                             <p class="abr-para">
-                                At 80/20 we believe in group economics, people come together have great food, wealth building network and social gatherings all under one roof
-                                When your on your 80 you are eating well investing money, spending quality time and giving back, When your on your 20 you indulge in whatever makes you feel alive, After all you can’t be 100% all the time.
+                                At 80/20, we’re all about making moves, building wealth, and enjoying life—together. We believe in group economics, where communities come together to create something bigger than themselves. Picture this: amazing food, high-energy networking, and unforgettable social vibes all under one roof. That’s the 80/20 way.
                             </p>
-                            <p class="abr-para pt-4">
-                                80/20 Eatery is a hub for entrepreneurs, become an <a href="/ceo-workspace">8020 CEO</a> and we will invest with you.
+
+                            <h2 class="pt-5 text-white pb-2">
+                                Living the 80/20 Life:
+                            </h2>
+
+                            <p class="abr-para pt-2">
+                                When you’re on your 80, you’re in grind mode—eating clean, stacking your money, spending time with the people who matter, and giving back to the community. But your 20? That’s all about living it up—indulging in the things that make you feel alive. After all, life’s about balance, and no one can be all business 100% of the time.
+                            </p>
+
+                            <h2 class="pt-5 text-white pb-2">
+                                What’s 80/20 Eatery?
+                            </h2>
+
+                            <p class="abr-para pt-2">
+                                It’s not just a spot; it’s a vibe—a hub for entrepreneurs, creators, and go-getters. Here, we’re mixing good eats with big ideas, and if you’re ready to level up, becoming an 80/20 CEO is your next move. We’re not just a space—we’re partners in your hustle. Join us, and we’ll invest in your vision because we believe in building success together.
+                            </p>
+
+                            <p class="abr-para pt-5">
+                                At 80/20 Eatery, it’s more than just business—it’s a lifestyle. Let’s eat, connect, and build something epic.
                             </p>
                         </div>
                     </div>

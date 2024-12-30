@@ -37,8 +37,8 @@ class ContactFormController extends Controller {
             'name' => $request->name
         );
 
-        Mail::to('info@8020eatery.com')->send(new ContactMail($data));
-        Mail::to($request->email)->send(new ThankYou($data_thankYou));
+//        Mail::to('info@8020eatery.com')->send(new ContactMail($data));
+//        Mail::to($request->email)->send(new ThankYou($data_thankYou));
         //  Store data in database
 //        Contact::create($request->all());
 

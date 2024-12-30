@@ -108,13 +108,13 @@
                                 <tr>
                                     <td class="sm-px-24"
                                         style="background-color: #ffffff; border-radius: 4px; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; font-size: 14px; line-height: 24px; padding: 48px; text-align: left; color: black;">
-                                        <h1 style="font-weight: 700; margin-top: 0; color: #ff5850; text-align: center;padding-bottom: 20px;">
-                                          80/20 CEO Membership Form
+                                        <h1 style="font-family: 'DM Sans',serif;font-weight: bold; margin-top: 0; color: #ff5850; text-align: center;padding-bottom: 20px;">
+                                            80/20 CEO Membership Form
                                         </h1>
                                         <table style="text-align: left;width: 100%;border-collapse: collapse; display: grid;">
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Full Name
                                                     </span>
                                                 </td>
@@ -126,7 +126,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Email Address
                                                     </span>
                                                 </td>
@@ -138,7 +138,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Why are you interested in becoming an 80/20 CEO member?
                                                     </span>
                                                 </td>
@@ -150,7 +150,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         What type of Membership are you looking for?
                                                     </span>
                                                 </td>
@@ -162,7 +162,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Are you interested in using the 80/20 Eatery as your business address? <br> (Mailbox +$25 monthly)
                                                     </span>
                                                 </td>
@@ -174,7 +174,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Do you need assistance with any of the following?
                                                     </span>
                                                 </td>
@@ -186,7 +186,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         What services or amenities are most important to you?
                                                     </span>
                                                 </td>
@@ -198,7 +198,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         What are your goals for joining the 80/20 CEO Membership?
                                                     </span>
                                                 </td>
@@ -210,7 +210,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Are you currently working on a specific project or initiative?
                                                     </span>
                                                 </td>
@@ -222,7 +222,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Is there anything specific you’d like to learn or see during your tour?
                                                     </span>
                                                 </td>
@@ -234,7 +234,7 @@
                                             </tr>
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
-                                                    <span style="font-weight: bold; color: black; font-size: 16px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Anything else you’d like us to know about you?
                                                     </span>
                                                 </td>
