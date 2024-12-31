@@ -25,6 +25,9 @@
             span.pricing-ceo {
                 font-size: 26px;
             }
+            .cta-box {
+                background-position: left;
+            }
 
         }
 
@@ -143,7 +146,7 @@
                             <p class="abr-para pt-3 pb-3">
                                 Let’s make your event one to remember. Contact us now to check availability, explore catering options, and secure your date. Your perfect celebration starts here!
                             </p>
-                            <a href="contact.html" class="primary-btn">Book Now <span><i class="ri-arrow-right-up-line"></i></span></a>
+                            <a href="/contact" class="primary-btn">Book Now <span><i class="ri-arrow-right-up-line"></i></span></a>
                         </div>
                     </div>
                 </div>
