@@ -13,6 +13,7 @@ class MembershipController extends Controller
 {
     public function store(Request $request)
     {
+        // dd($request);
         $is_becoming_member = [];
         if (isset($request->is_becoming_member1)) {
             array_push($is_becoming_member, $request->is_becoming_member1);
