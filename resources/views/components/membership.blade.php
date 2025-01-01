@@ -560,12 +560,12 @@
                     isValid = false;
                 }
                 if (!tour.value.trim()) {
-                    tourError.textContent = 'Enter Some value';
+                    tourError.textContent = 'Please Enter Some Details';
                     scrollToReqEle(tourError);
                     isValid = false;
                 }
                 if (!about.value.trim()) {
-                    aboutError.textContent = 'Enter Some value';
+                    aboutError.textContent = 'Please Enter Some Details';
                     scrollToReqEle(aboutError);
                     isValid = false;
                 }
