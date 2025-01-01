@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\MembershipController;
+use App\Http\Controllers\SubscriberController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,5 +25,6 @@ Route::view('/private-events', 'components.private-events');
 
 
 Route::post('/save-membership', [MembershipController::class, 'store']);
+Route::post('/subscribe-user', [SubscriberController::class, 'subscribeUser']);
 Route::get('/contact', [ContactFormController::class, 'viewContactForm']);
 Route::post('/contact', [ContactFormController::class, 'ContactForm'])->name('contact');
