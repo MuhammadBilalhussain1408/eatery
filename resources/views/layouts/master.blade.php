@@ -36,7 +36,6 @@
 @include('include.nav')
 @yield('content')
 @include('include.footer')
-{{--@include('include.subscription-popup')--}}
 
 </body>
 
