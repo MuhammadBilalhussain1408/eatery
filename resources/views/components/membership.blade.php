@@ -571,7 +571,9 @@
                 }
                 // If the form is valid, submit it
                 if (isValid) {
-                    // alert('submitted')
+                    let abrform = document.querySelector('[name="abrform"]');
+                    abrform.disabled = true;
+                    abrform.value = "Please wait...";
                     this.submit();
                 }
             });
@@ -729,7 +731,7 @@
                         current_projectNo.checked = false;
                         current_projectVal.style.display = "block";
                         current_projectVal.focus();
-                    }else{
+                    } else {
                         current_projectVal.style.display = "none";
                         current_projectVal.value = "";
                     }
