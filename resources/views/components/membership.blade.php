@@ -255,7 +255,7 @@
                                                 <span>Conference/Meeting Rooms</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="checkbox" name="services5" class="services-option"
+                                                <input type="checkbox" name="services6" class="services-option"
                                                     value="Relaxation Spaces (hookah lounge, juice bar, etc.)">
                                                 <span>Relaxation Spaces (hookah lounge, juice bar, etc.)</span>
                                             </label>
@@ -424,6 +424,7 @@
                 let services3 = document.querySelector('[name="services3"]');
                 let services4 = document.querySelector('[name="services4"]');
                 let services5 = document.querySelector('[name="services5"]');
+                let services6 = document.querySelector('[name="services6"]');
                 let servicesOther = document.querySelector('[name="servicesOther"]');
                 let servicesOtherVal = document.querySelector('[name="servicesOtherVal"]');
 
@@ -524,6 +525,7 @@
                     !services3.checked &&
                     !services4.checked &&
                     !services5.checked &&
+                    !services6.checked &&
                     !servicesOther.checked) {
                     servicesError.textContent = 'Please Select Atleast One option';
                     scrollToReqEle(servicesError);

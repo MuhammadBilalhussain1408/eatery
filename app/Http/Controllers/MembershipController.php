@@ -76,6 +76,9 @@ class MembershipController extends Controller
         if (isset($request->services5)) {
             array_push($services, $request->services5);
         }
+        if (isset($request->services6)) {
+            array_push($services, $request->services6);
+        }
         if(isset($request->servicesOther)){
             $services = [];
             array_push($services, $request->servicesOtherVal);
