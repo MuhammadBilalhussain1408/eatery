@@ -10,6 +10,6 @@ class SubscriberController extends Controller
     public function subscribeUser(Request $request){
         // dd($request);
         Subscriber::create($request->except('_token'));
-        return response()->json(['message' => 'Subscribed Successfully']);
+        return response()->json(['message' => 'Thank You For Subscribing']);
     }
 }

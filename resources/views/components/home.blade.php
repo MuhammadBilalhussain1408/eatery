@@ -347,13 +347,15 @@
                 setTimeout(() => {
                     const myModal = new bootstrap.Modal(document.getElementById('autoModal'));
                     myModal.show();
-                }, 4000);
-            });
+                }, 3000);
 
-            function Subscribe() {
-                let subscribe_name = $('#subscribe_name').val();
-                let subscribe_email = $('#subscribe_email').val();
-                let subscribe_phone = $('#subscribe_phone').val();
+                // console.log(document.getElementById('subscriptionForm'));
+
+                document.getElementById('subscriptionForm').addEventListener('submit',function(e){
+                    e.preventDefault();
+                let subscribe_name = $('#name').val();
+                let subscribe_email = $('#email').val();
+                let subscribe_phone = $('#phone').val();
                 if(!subscribe_email.trim()){
                     alert('Email is Required');
                     return;
@@ -368,10 +370,46 @@
                         'phone':subscribe_phone,
                     },
                     success: function(result) {
-                        console.log(result);
+                        $('#SubscribeModalBody').html(`<h2>${result.message}</h2>`);
+                        // window.addEventListener('load', () => {
+                            setTimeout(() => {
+                                $('#subscribeModalCloseBtn').click();
+                            }, 3000);
+                        // });
                     }
                 });
-            }
+            })
+            });
+
+            // function Subscribe(e) {
+            //     e.preventDefault();
+            //     let subscribe_name = $('#subscribe_name').val();
+            //     let subscribe_email = $('#subscribe_email').val();
+            //     let subscribe_phone = $('#subscribe_phone').val();
+            //     if(!subscribe_email.trim()){
+            //         alert('Email is Required');
+            //         return;
+            //     }
+            //     $.ajax({
+            //         url: "{{url('subscribe-user')}}",
+            //         method:'POST',
+            //         data:{
+            //             '_token':"{{csrf_token()}}",
+            //             'name':subscribe_name,
+            //             'email':subscribe_email,
+            //             'phone':subscribe_phone,
+            //         },
+            //         success: function(result) {
+            //             $('#SubscribeModalBody').html(`<h2>${result.message}</h2>`);
+            //             // window.addEventListener('load', () => {
+            //                 setTimeout(() => {
+            //                     $('#subscribeModalCloseBtn').click();
+            //                 }, 4000);
+            //             // });
+            //         }
+            //     });
+            // }
+
         </script>
     </div>
 @endsection

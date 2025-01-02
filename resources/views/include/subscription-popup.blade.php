@@ -63,16 +63,16 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" id="subscribeModalCloseBtn" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-center">
+            <div class="modal-body text-center" id="SubscribeModalBody">
                 <h2 class="text-white text-center">
                     SUBSCRIBE NOW
                 </h2>
                 <h4 class="fw-bold pt-2">
                     Subscribe today and get a free Wellness Pop
                 </h4>
-                <form onsubmit="checkForm(this);" method="post">
+                <form id="subscriptionForm">
                     <div class="form-group">
 
                             <input class="subscription-input-fields"
