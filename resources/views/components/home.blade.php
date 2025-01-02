@@ -347,7 +347,7 @@
                 setTimeout(() => {
                     const myModal = new bootstrap.Modal(document.getElementById('autoModal'));
                     myModal.show();
-                }, 3000);
+                }, 5000);
 
                 // console.log(document.getElementById('subscriptionForm'));
 

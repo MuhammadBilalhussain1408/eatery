@@ -15,6 +15,6 @@ class SubscriberController extends Controller
         $Subscriber = Subscriber::create($request->except('_token'));
         Mail::to($Subscriber->email)->send(new AdminSubscriptionMail($Subscriber));
         Mail::to($Subscriber->email)->send(new UserSubscriptionMail($Subscriber));
-        return response()->json(['message' => 'Thank You For Subscribing']);
+        return response()->json(['message' => 'Hi '.$Subscriber->name.' Thank You For Subscribing']);
     }
 }
