@@ -11,7 +11,7 @@
         height: 500px;
         max-height: 500px;
         z-index: 2;
-        background: url('assets/images/bg-modal.jpg');
+        background: url('assets/images/sub1.jpg');
         border-width: 5px;
         border-style: dashed;
         border-color: rgb(255, 255, 255);
@@ -72,7 +72,7 @@
                 <h4 class="fw-bold pt-2">
                     Subscribe today and get a free Wellness Pop
                 </h4>
-                <form id="subscriptionForm">
+                <form onsubmit="checkForm(this);" id="subscriptionForm">
                     <div class="form-group">
 
                             <input class="subscription-input-fields"
@@ -100,9 +100,21 @@
                     <div class="pt-3">
                         <input style="width: 62%;border-radius: 7px;" name="abrform" class="primary-btn" type="submit" value="Subscribe Now">
                     </div>
-
                 </form>
             </div>
         </div>
     </div>
 </div>
+<script>
+    var checkForm = function(form) {
+        /* Submit button was clicked */
+
+        //
+        // check form input values
+        //
+
+        form.abrform.disabled = true;
+        form.abrform.value = "Please wait...";
+        return true;
+    };
+</script>

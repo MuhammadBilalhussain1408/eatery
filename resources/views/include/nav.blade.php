@@ -15,7 +15,7 @@
                         <ul class="main-menu">
                             <li><a href="/">Home</a></li>
                             <li><a href="/about-us">About Us</a></li>
-                            <li><a href="javascript:void(0);">Directory</a></li>
+                            <li><a href="/directory">Directory</a></li>
                             <li><a href="javascript:void(0);">Calendar</a></li>
                             <li><a href="/private-events">Private Events</a></li>
                             <li><a href="/ceo-workspace">Membership</a></li>

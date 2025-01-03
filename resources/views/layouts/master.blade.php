@@ -5,7 +5,7 @@
 <head>
 
     @include('include.header')
-    <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=3fc747b96b540' async='true'></script>
+{{--    <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=3fc747b96b540' async='true'></script>--}}
 
 </head>
 

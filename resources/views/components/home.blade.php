@@ -342,7 +342,7 @@
         @include('include.foot')
 
         <script>
-            // Wait for 3 seconds and then show the modal
+            // Wait for 5 seconds and then show the modal
             window.addEventListener('load', () => {
                 setTimeout(() => {
                     const myModal = new bootstrap.Modal(document.getElementById('autoModal'));
@@ -370,7 +370,7 @@
                         'phone':subscribe_phone,
                     },
                     success: function(result) {
-                        $('#SubscribeModalBody').html(`<h2>${result.message}</h2>`);
+                        $('#SubscribeModalBody').html(`<h3  class="text-white pt-50" style="padding-top: 9rem;">${result.message}</h3>`);
                         // window.addEventListener('load', () => {
                             setTimeout(() => {
                                 $('#subscribeModalCloseBtn').click();

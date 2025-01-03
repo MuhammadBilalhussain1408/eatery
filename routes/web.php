@@ -22,6 +22,7 @@ Route::view('/ceo-workspace', 'components.ceo-workspace');
 Route::view('/membership-subscription', 'components.membership');
 Route::view('/about-us', 'components.about');
 Route::view('/private-events', 'components.private-events');
+Route::view('/directory', 'components.directory');
 
 
 Route::post('/save-membership', [MembershipController::class, 'store']);

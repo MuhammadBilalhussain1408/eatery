@@ -25,7 +25,7 @@ class AdminSubscriptionMail extends Mailable
     public function build()
     {
         $data = $this->subscriberDetail->toArray();
-        $subject = 'Subscriber Admin Mail';
+        $subject = 'New Lead Subscription Form';
         return $this->subject($subject)
                     ->view('components.mail-layouts.admin_subscription', compact('data'));
     }

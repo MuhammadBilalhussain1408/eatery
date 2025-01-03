@@ -25,7 +25,7 @@ class UserSubscriptionMail extends Mailable
     public function build()
     {
         $data = $this->subscriberDetail->toArray();
-        $subject = 'Subscriber Mail';
+        $subject = 'Thank you For Subscribing Us!';
         return $this->subject($subject)
                     ->view('components.mail-layouts.user_subscription', compact('data'));
     }

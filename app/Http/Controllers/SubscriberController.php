@@ -13,8 +13,8 @@ class SubscriberController extends Controller
     public function subscribeUser(Request $request){
         // dd($request);
         $Subscriber = Subscriber::create($request->except('_token'));
-        Mail::to($Subscriber->email)->send(new AdminSubscriptionMail($Subscriber));
+        Mail::to('info@8020eatery.com')->send(new AdminSubscriptionMail($Subscriber));
         Mail::to($Subscriber->email)->send(new UserSubscriptionMail($Subscriber));
-        return response()->json(['message' => 'Hi '.$Subscriber->name.' Thank You For Subscribing']);
+        return response()->json(['message' => 'Thank You For Subscribing']);
     }
 }
