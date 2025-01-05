@@ -189,7 +189,9 @@
         .text-orange{
             color: #e2612e !important;
         }
-
+        .menu-area {
+            border-bottom: 1px solid #ffffffc4;
+        }
 
 
 

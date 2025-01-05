@@ -13,6 +13,103 @@
         .brand-items .brand-logo {
             border: 1px solid #ffffff;
         }
+        .brand-items .brand-logo {
+            border: 3px solid #e2612e;
+            background-color: white;
+        }
+        .brand-items .brand-logo img.v1 {
+            width: 182px;
+            padding-top: 5.5rem;
+        }
+        .brand-items .brand-logo img.v2 {
+            width: 182px;
+            padding-top: 5.5rem;
+        }
+        .brand-items .brand-logo img.v3 {
+            width: 182px;
+            padding-top: 1.5rem;
+        }
+        .brand-items .brand-logo img.v4 {
+            width: 182px;
+            padding-top: 1.3rem;
+        }
+        .brand-items .brand-logo img.v5 {
+            width: 182px;
+            padding-top: 1.5rem;
+        }
+        .brand-items .brand-logo img.v6 {
+            width: 182px;
+            padding-top: 1.5rem;
+        }
+        .brand-items .brand-logo img.v7 {
+            width: 153px;
+            padding-top: 2.4rem;
+        }
+        .brand-items .brand-logo img.v8 {
+            width: 153px;
+            padding-top: 2.4rem;
+        }
+
+        .brand-items .brand-logo img{
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            transition: .5s ease;
+             opacity: 0;
+            position: relative;
+            bottom: 34%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .brand-logo:hover img {
+            opacity: 0.3;
+        }
+
+        .brand-logo:hover .middle {
+            opacity: 1;
+        }
+        .brand-items .brand-logo:hover {
+            background-color: #ffffffb0;
+        }
+        a.primary-btn.brand-btn{
+            border-radius: 9px;
+        }
+        a.primary-btn.brand-btn:hover {
+            background-position: left bottom;
+            color: #ffffff;
+            background-color: black;
+            border-radius: 9px;
+            border: 1px solid black;
+        }
+        .middle.btn1 {
+            bottom: 19px;
+        }
+        .middle.btn2 {
+            bottom: 30px;
+        }
+        .middle.btn3 {
+            bottom: 93px;
+        }
+        .middle.btn4 {
+            bottom: 93px;
+        }
+        .middle.btn5 {
+            bottom: 93px;
+        }
+        .middle.btn6 {
+            bottom: 93px;
+        }
+        .middle.btn8 {
+            bottom: 80px;
+        }
+
 
 
         /*For Mobiles*/
@@ -31,6 +128,60 @@
                 float: left;
                 overflow: hidden;
             }
+            .brand-items .brand-logo img.v1 {
+                width: 120px;
+                padding-top: 3.8rem;
+            }
+            .brand-items .brand-logo img.v2 {
+                width: 120px;
+                padding-top: 3.5rem;
+            }
+            .brand-items .brand-logo img.v3 {
+                width: 100px;
+                padding-top: 1.1rem;
+            }
+            .brand-items .brand-logo img.v4 {
+                width: 100px;
+                padding-top: 1.1rem;
+            }
+            .brand-items .brand-logo img.v5 {
+                width: 100px;
+                padding-top: 1.1rem;
+            }
+            .brand-items .brand-logo img.v6 {
+                width: 100px;
+                padding-top: 1.1rem;
+            }
+            .brand-items .brand-logo img.v7 {
+                width: 100px;
+                padding-top: 1.1rem;
+            }
+            .brand-items .brand-logo img.v8 {
+                width: 100px;
+                padding-top: 1.1rem;
+            }
+            .middle.btn1 {
+                bottom: 16px;
+            }
+            .middle.btn2 {
+                bottom: 25px;
+            }
+            .middle.btn3 {
+                bottom: 48px;
+            }
+            .middle.btn4 {
+                bottom: 55px;
+            }
+            .middle.btn5 {
+                bottom: 53px;
+            }
+            .middle.btn6 {
+                bottom: 52px;
+            }
+            .middle.btn8 {
+                bottom: 51px;
+            }
+
 
         }
     </style>
@@ -65,56 +216,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-60">
-                    <div class="brand-items">
+                <div class="row pt-90">
+                    <div class="brand-items pt-3 pb-5">
                         <div class="brand-single-2">
                             <div class="brand-logo dark-version">
-                                <img src="assets/brand/v1.png" style="width: 78%;" alt="brand-logo">
+                                <img class="v7" src="assets/images/logo.png" alt="brand-logo">
+                                <div class="middle btn7">
+                                    <a href="https://www.instagram.com/8020eatery/" class="primary-btn brand-btn">Visit Now</a>
+                                </div>
                             </div>
                         </div>
                         <div class="brand-single-2">
                             <div class="brand-logo dark-version">
-                                <img src="assets/brand/v2.png" style="width: 78%;" alt="brand-logo">
+                                <img class="v1" src="assets/brand/v1.png" alt="brand-logo">
+                                <div class="middle btn1">
+                                    <a href="javascript:void(0);" class="primary-btn brand-btn">Visit Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="brand-single-2">
+                            <div class="brand-logo dark-version">
+                                <img class="v2" src="assets/brand/v2.png" alt="brand-logo">
+                                <div class="middle btn2">
+                                    <a href="https://www.instagram.com/sneakyjuicebrand/" class="primary-btn brand-btn">Visit Now</a>
+                                </div>
                             </div>
                         </div>
                         <div class="brand-single-2">
                             <div class="brand-logo dark-version">
-                                <img src="assets/images/spotify-logo.png" alt="brand-logo">
+                                <img class="v3" src="assets/brand/b1.png" alt="brand-logo">
+                                <div class="middle btn3">
+                                    <a href="javascript:void(0);" class="primary-btn brand-btn">Visit Now</a>
+                                </div>
                             </div>
                         </div>
                         <div class="brand-single-2">
                             <div class="brand-logo dark-version">
-                                <img src="assets/images/square-logo.png" alt="brand-logo">
+                                <img class="v4" src="assets/brand/b2.png" alt="brand-logo">
+                                <div class="middle btn4">
+                                    <a href="https://www.instagram.com/issasempanadas/" class="primary-btn brand-btn">Visit Now</a>
+                                </div>
                             </div>
                         </div>
                         <div class="brand-single-2">
                             <div class="brand-logo dark-version">
-                                <img src="assets/images/upwork-logo.png" alt="brand-logo">
+                                <img class="v5" src="assets/brand/b3.png" alt="brand-logo">
+                                <div class="middle btn5">
+                                    <a href="https://www.instagram.com/tnthookah100/" class="primary-btn brand-btn">Visit Now</a>
+                                </div>
                             </div>
                         </div>
                         <div class="brand-single-2">
                             <div class="brand-logo dark-version">
-                                <img src="assets/images/loom-logo.png" alt="brand-logo">
+                                <img class="v6" src="assets/brand/b4.png" alt="brand-logo">
+                                <div class="middle btn6">
+                                    <a href="https://www.instagram.com/theoriginalsoulfoodcafe/" class="primary-btn brand-btn">Visit Now</a>
+                                </div>
                             </div>
                         </div>
                         <div class="brand-single-2">
                             <div class="brand-logo dark-version">
-                                <img src="assets/images/slack-logo.png" alt="brand-logo">
-                            </div>
-                        </div>
-                        <div class="brand-single-2">
-                            <div class="brand-logo dark-version">
-                                <img src="assets/images/spotify-logo.png" alt="brand-logo">
-                            </div>
-                        </div>
-                        <div class="brand-single-2">
-                            <div class="brand-logo dark-version">
-                                <img src="assets/images/loom-logo.png" alt="brand-logo">
-                            </div>
-                        </div>
-                        <div class="brand-single-2">
-                            <div class="brand-logo dark-version">
-                                <img src="assets/images/zoom-logo.png" alt="brand-logo">
+                                <img class="v8" src="assets/brand/b5.png" alt="brand-logo">
+                                <div class="middle btn8">
+                                    <a href="https://www.instagram.com/mindprintgraphics/" class="primary-btn brand-btn">Visit Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>

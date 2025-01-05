@@ -37,13 +37,12 @@
                             Copyright &copy; <script>document.write(new Date().getFullYear())</script> | All Rights Reserved | 8020 Eatery
                         </p>
                     </div>
-                    {{--                        <div class="col-lg-6 align-self-center">--}}
-                    {{--                            <ul class="footer-menu">--}}
-                    {{--                                <li><a href="terms.html">Terms Of Services</a></li>--}}
-                    {{--                                <li><a href="privacy.html">Privacy Policy</a></li>--}}
-                    {{--                                <li><a href="contact.html">Support</a></li>--}}
-                    {{--                            </ul>--}}
-                    {{--                        </div>--}}
+                    <div class="col-lg-6 align-self-center">
+                        <ul class="footer-menu">
+                            <li><a href="/terms-and-conditions">Terms Of Services</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

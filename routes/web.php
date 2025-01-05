@@ -23,6 +23,8 @@ Route::view('/membership-subscription', 'components.membership');
 Route::view('/about-us', 'components.about');
 Route::view('/private-events', 'components.private-events');
 Route::view('/directory', 'components.directory');
+Route::view('/privacy-policy', 'components.privacy-policy');
+Route::view('/terms-and-conditions', 'components.terms-conditions');
 
 
 Route::post('/save-membership', [MembershipController::class, 'store']);
