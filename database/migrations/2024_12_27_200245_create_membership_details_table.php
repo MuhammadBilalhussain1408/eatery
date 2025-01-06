@@ -25,7 +25,7 @@ return new class extends Migration
             $table->text('current_project')->nullable();
             $table->text('current_projectVal')->nullable();
             $table->text('tour')->nullable();
-            $table->text('about');
+            $table->text('about')->nullable();
             $table->timestamps();
         });
     }
