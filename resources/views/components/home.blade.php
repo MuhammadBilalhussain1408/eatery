@@ -351,43 +351,46 @@
 
                 // console.log(document.getElementById('subscriptionForm'));
 
-                document.getElementById('subscriptionForm').addEventListener('submit',function(e){
+                document.getElementById('subscriptionForm').addEventListener('submit', function(e) {
                     e.preventDefault();
-                let subscribe_name = $('#name').val();
-                let subscribe_email = $('#email').val();
-                let subscribe_phone = $('#phone').val();
-                if(!subscribe_email.trim()){
-                    alert('Email is Required');
-                    return;
-                }
-                $.ajax({
-                    url: "{{url('subscribe-user')}}",
-                    method:'POST',
-                    data:{
-                        '_token':"{{csrf_token()}}",
-                        'name':subscribe_name,
-                        'email':subscribe_email,
-                        'phone':subscribe_phone,
-                        'g-recaptcha-token':$('#g-recaptcha-response').val()
-                    },
-                    success: function(result) {
-                        if(result.message){
-                        $('#SubscribeModalBody').html(`<h3  class="text-white pt-50" style="padding-top: 9rem;">${result.message}</h3>`);
-                        // window.addEventListener('load', () => {
-                            setTimeout(() => {
-                                $('#subscribeModalCloseBtn').click();
-                            }, 3000);
-                        // });
-                        }else{
-                            for(let i in result.errors){
-                                alert(result.errors[i]);
-                            }
-                            $('#abrform').text('Subscribe Now')
-                            $('#abrform').attr('disabled',false)
-                        }
+                    let subscribe_name = $('#name').val();
+                    let subscribe_email = $('#email').val();
+                    let subscribe_phone = $('#phone').val();
+                    if (!subscribe_email.trim()) {
+                        alert('Email is Required');
+                        return;
                     }
-                });
-            })
+                    $.ajax({
+                        url: "{{ url('subscribe-user') }}",
+                        method: 'POST',
+                        data: {
+                            '_token': "{{ csrf_token() }}",
+                            'name': subscribe_name,
+                            'email': subscribe_email,
+                            'phone': subscribe_phone,
+                            'g-recaptcha-token': $('#g-recaptcha-response').val()
+                        },
+                        success: function(result) {
+                            if (result.message) {
+                                $('#SubscribeModalBody').html(
+                                    `<h3  class="text-white pt-50" style="padding-top: 9rem;">${result.message}</h3>`
+                                );
+                                // window.addEventListener('load', () => {
+                                setTimeout(() => {
+                                    $('#subscribeModalCloseBtn').click();
+                                }, 3000);
+                                // });
+                            } else {
+                                for (let i in result.errors) {
+                                    alert(result.errors[i]);
+                                }
+                                let subscriptionForm = document.getElementById('subscriptionForm');
+                                subscriptionForm.abrform.disabled = false;
+                                subscriptionForm.abrform.value = "Subscribe Now";
+                            }
+                        }
+                    });
+                })
             });
 
             // function Subscribe(e) {
@@ -400,10 +403,10 @@
             //         return;
             //     }
             //     $.ajax({
-            //         url: "{{url('subscribe-user')}}",
+            //         url: "{{ url('subscribe-user') }}",
             //         method:'POST',
             //         data:{
-            //             '_token':"{{csrf_token()}}",
+            //             '_token':"{{ csrf_token() }}",
             //             'name':subscribe_name,
             //             'email':subscribe_email,
             //             'phone':subscribe_phone,
@@ -418,7 +421,6 @@
             //         }
             //     });
             // }
-
         </script>
     </div>
 @endsection
