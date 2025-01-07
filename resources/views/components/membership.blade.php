@@ -750,6 +750,13 @@
                 });
             });
         </script>
+        <script>
+            @if ($errors->any())
+            let abrform = document.querySelector('[name="abrform"]');
+                    abrform.disabled = false;
+                    abrform.value = "Submit Now";
+            @endif
+        </script>
 
 
     </div>
