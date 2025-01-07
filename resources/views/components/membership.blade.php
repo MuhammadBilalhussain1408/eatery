@@ -80,6 +80,15 @@
             <div class="container">
                 <div class="row">
                     <div class="section-top pb-50">
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
                         <h2 class="title_one form-heading text-white">
                             Thank you for your interest in the <span> 80/20 CEO Membership!</span> We’re excited to get to
                             know you and help you achieve your goals. Please take a moment to fill out this form.
@@ -90,6 +99,7 @@
                             <form action="{{ url('save-membership') }}" method="post"
                                 id="membershipForm">
                                 @csrf
+                                <input type="hidden" name="g-recaptcha-token" id="g-recaptcha-token" />
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
