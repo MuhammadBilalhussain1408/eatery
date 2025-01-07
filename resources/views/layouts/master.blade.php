@@ -44,8 +44,7 @@
                 action: 'submit'
             }).then(function(token) {
                 document.getElementById('g-recaptcha-response').value = token;
-                console.log(token);
-
+                if(document.getElementById('g-recaptcha-token'))
                 document.getElementById('g-recaptcha-token').value = token;
             });
         });

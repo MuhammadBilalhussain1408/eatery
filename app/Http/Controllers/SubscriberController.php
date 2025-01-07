@@ -24,7 +24,7 @@ class SubscriberController extends Controller
         }
         $isCaptchaValid = validateRecaptcha($request);
         if ($isCaptchaValid) {
-            $Subscriber = Subscriber::create($request->except('_token'));
+            $Subscriber = Subscriber::create($request->except('_token','g-recaptcha-token'));
             Mail::to('info@8020eatery.com')->send(new AdminSubscriptionMail($Subscriber));
             Mail::to($Subscriber->email)->send(new UserSubscriptionMail($Subscriber));
             return response()->json(['message' => 'Thank You For Subscribing']);
