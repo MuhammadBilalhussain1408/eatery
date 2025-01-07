@@ -87,7 +87,7 @@
                     </div>
                     <div class="col-lg-12 pt-4" style="box-shadow: 0px 0px 30px 0px rgb(255 255 255 / 20%);padding: 3rem;">
                         <div class="contact-form-3">
-                            <form onsubmit="checkForm(this);" action="{{ url('save-membership') }}" method="post"
+                            <form action="{{ url('save-membership') }}" method="post"
                                 id="membershipForm">
                                 @csrf
                                 <div class="row">
