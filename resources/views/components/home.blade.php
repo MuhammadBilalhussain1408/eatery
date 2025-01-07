@@ -368,14 +368,21 @@
                         'name':subscribe_name,
                         'email':subscribe_email,
                         'phone':subscribe_phone,
+                        'g-recaptcha-token':$('#g-recaptcha-response').val()
                     },
                     success: function(result) {
+                        if(result.errors.length <0){
                         $('#SubscribeModalBody').html(`<h3  class="text-white pt-50" style="padding-top: 9rem;">${result.message}</h3>`);
                         // window.addEventListener('load', () => {
                             setTimeout(() => {
                                 $('#subscribeModalCloseBtn').click();
                             }, 3000);
                         // });
+                        }else{
+                            result.errors.forEach(e=>{
+                                alert(e);
+                            })
+                        }
                     }
                 });
             })

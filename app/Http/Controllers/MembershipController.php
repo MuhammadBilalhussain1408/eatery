@@ -13,6 +13,9 @@ class MembershipController extends Controller
 {
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'email' => 'required|email:rfc,dns',
+        ]);
         $isCaptchaValid = validateRecaptcha($request);
         if ($isCaptchaValid) {
             // dd($request);
