@@ -140,7 +140,8 @@
                                 </tr>
                                 <tr>
                                     <td style="font-family: 'Montserrat',Arial,sans-serif; height: 16px;"
-                                        height="16"></td>
+                                        height="16">
+                                    </td>
                                 </tr>
                             </table>
 

@@ -67,7 +67,7 @@
             </div>
             <div class="modal-body text-center" id="SubscribeModalBody">
                 <h2 class="text-white text-center">
-                    SUBSCRIBE NOW
+                    FREE Wellness Pop
                 </h2>
                 <h4 class="fw-bold pt-2">
                     Subscribe today and get a free Wellness Pop
