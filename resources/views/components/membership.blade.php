@@ -105,7 +105,7 @@
                                         <div class="form-group">
                                             <label for="name">Full Name</label>
                                             <input type="text" id="name" name="name"
-                                                placeholder="What's your full name?*">
+                                                placeholder="What's your full name?*" value="{{old('name')}}">
                                             <p class="text-danger" id="nameError"></p>
                                         </div>
                                     </div>
@@ -113,15 +113,19 @@
                                         <div class="form-group">
                                             <label for="email">Email Address</label>
                                             <input type="email" id="email" name="email"
-                                                placeholder="What's your email?*">
-                                            <p class="text-danger" id="emailError"></p>
+                                                placeholder="What's your email?*" value="{{old('email')}}">
+                                            <p class="text-danger" id="emailError">
+                                                @error('email')
+                                                    {{$errors->first('email')}}
+                                                @enderror
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="phone">Phone Number</label>
                                             <input type="tel" id="phone" name="phone"
-                                                placeholder="What's your phone number?*">
+                                                placeholder="What's your phone number?*" value="{{old('phone')}}">
                                             <p class="text-danger" id="phoneError"></p>
                                         </div>
                                     </div>
@@ -131,7 +135,7 @@
                                                 member?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="is_becoming_member1"
-                                                    value="Investment opportunities">
+                                                    value="Investment opportunities"  {{old('is_becoming_member1')=='Investment opportunities' ? 'checked' :'' }}>
                                                 <span>Investment opportunities</span>
                                             </label>
                                             <label class="budget-option">
