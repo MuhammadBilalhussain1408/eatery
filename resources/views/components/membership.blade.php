@@ -140,20 +140,20 @@
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="is_becoming_member2"
-                                                    value="Selling product & services">
+                                                    value="Selling product & services" {{old('is_becoming_member1')=='Selling product & services' ? 'checked' :'' }}>
                                                 <span>Selling product & services</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="checkbox" name="is_becoming_member3" value="Health benefits">
+                                                <input type="checkbox" name="is_becoming_member3" value="Health benefits" {{old('is_becoming_member1')=='Health benefits' ? 'checked' :'' }}>
                                                 <span>Health benefits</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="checkbox" name="is_becoming_member4" value="Brand promotion">
+                                                <input type="checkbox" name="is_becoming_member4" value="Brand promotion" {{old('is_becoming_member1')=='Brand promotion' ? 'checked' :'' }}>
                                                 <span>Brand promotion</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="is_becoming_member5"
-                                                    value="Partnerships / Collaborations">
+                                                    value="Partnerships / Collaborations" {{old('is_becoming_member1')=='Partnerships / Collaborations' ? 'checked' :'' }}>
                                                 <span>Partnerships / Collaborations</span>
                                             </label>
                                             <p class="text-danger" id="is_becomingError"></p>
@@ -164,27 +164,27 @@
                                             <label class="pb-3">What type of Membership are you looking for?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="membership1" class="membership-option"
-                                                    value="Restaurant discounts">
+                                                    value="Restaurant discounts"  {{old('membership1')=='Restaurant discounts' ? 'checked' :'' }}>
                                                 <span>Restaurant discounts</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="membership2" class="membership-option"
-                                                    value="Private Office">
+                                                    value="Private Office"  {{old('membership2')=='Private Office' ? 'checked' :'' }}>
                                                 <span>Private Office</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="membership3" class="membership-option"
-                                                    value="Shared Workspace">
+                                                    value="Shared Workspace"  {{old('membership3')=='Shared Workspace' ? 'checked' :'' }}>
                                                 <span>Shared Workspace</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="membership4" class="membership-option"
-                                                    value="Event Space">
+                                                    value="Event Space"  {{old('membership4')=='Event Space' ? 'checked' :'' }}>
                                                 <span>Event Space</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="membership5" id="not-sure"
-                                                    value="Not sure yet">
+                                                    value="Not sure yet"  {{old('membership5')=='Not sure yet' ? 'checked' :'' }}>
                                                 <span>Not sure yet</span>
                                             </label>
                                             <p class="text-danger" id="membershipError"></p>
@@ -196,12 +196,12 @@
                                                 business address? <br> <span> (Mailbox +$25 monthly)</span></label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="interested_in_use"
-                                                    id="interested_in_use_yes" value="Yes">
+                                                    id="interested_in_use_yes" value="Yes"  {{old('interested_in_use_yes')=='Yes' ? 'checked' :'' }}>
                                                 <span>Yes</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="interested_in_use" id="interested_in_use_no"
-                                                    value="No">
+                                                    value="No"  {{old('interested_in_use_yes')=='No' ? 'checked' :'' }}>
                                                 <span>No</span>
                                             </label>
                                             <p class="text-danger" id="interested_inError"></p>
@@ -212,28 +212,28 @@
                                             <label class="pb-3">Do you need assistance with any of the following?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="assistance1" class="assistance-option"
-                                                    value="Website Creation or Redesign">
+                                                    value="Website Creation or Redesign" {{old('assistance1')=='Website Creation or Redesign' ? 'checked' :'' }}>
                                                 <span>Website Creation or Redesign</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="assistance2" class="assistance-option"
-                                                    value="Branding or Marketing">
+                                                    value="Branding or Marketing" {{old('assistance2')=='Branding or Marketing' ? 'checked' :'' }}>
                                                 <span>Branding or Marketing</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="assistance3" class="assistance-option"
-                                                    value="Business Coaching">
+                                                    value="Business Coaching" {{old('assistance3')=='Business Coaching' ? 'checked' :'' }}>
                                                 <span>Business Coaching</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="assistanceOther" id="other-checkbox"
-                                                    value="Other (please specify)">
+                                                    value="Other (please specify)" {{old('assistanceOther')=='Other (please specify)' ? 'checked' :'' }}>
                                                 <span>Other (please specify)</span>
                                             </label>
                                             <div>
                                                 <input type="text" id="other-input" name="assistanceOtherVal"
                                                     placeholder="Please specify..."
-                                                    style="display: none; margin-top: 10px;">
+                                                    style="display: none; margin-top: 10px;" value="{{old('assistanceOtherVal')}}">
                                                 {{-- <input type="text" name="" id=""> --}}
                                             </div>
                                             <p class="text-danger" id="assistanceError"></p>
@@ -245,42 +245,44 @@
                                                 you?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="services1" class="services-option"
-                                                    value="Networking Opportunities">
+                                                    value="Networking Opportunities" {{old('services1')=='Networking Opportunities' ? 'checked' :'' }}>
                                                 <span>Networking Opportunities</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="services2" class="services-option"
-                                                    value="Educational Workshops">
+                                                    value="Educational Workshops" {{old('services2')=='Educational Workshops' ? 'checked' :'' }}>
                                                 <span>Educational Workshops</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="services3" class="services-option"
-                                                    value="Podcast Studio">
+                                                    value="Podcast Studio" {{old('services3')=='Podcast Studio' ? 'checked' :'' }}>
                                                 <span>Podcast Studio</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="services4" class="services-option"
-                                                    value="Content Creation Rooms">
+                                                    value="Content Creation Rooms" {{old('services4')=='Content Creation Rooms' ? 'checked' :'' }}>
                                                 <span>Content Creation Rooms</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="services5" class="services-option"
-                                                    value="Conference/Meeting Rooms">
+                                                    value="Conference/Meeting Rooms" {{old('services5')=='Conference/Meeting Rooms' ? 'checked' :'' }}>
                                                 <span>Conference/Meeting Rooms</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="services6" class="services-option"
-                                                    value="Relaxation Spaces (hookah lounge, juice bar, etc.)">
+                                                    value="Relaxation Spaces (hookah lounge, juice bar, etc.)"
+                                                    {{old('services6')=='Relaxation Spaces (hookah lounge, juice bar, etc.)' ? 'checked' :'' }}
+                                                    >
                                                 <span>Relaxation Spaces (hookah lounge, juice bar, etc.)</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="servicesOther" id="serviceOtherBtn"
-                                                    value="Other (please specify)">
+                                                    value="Other (please specify)" {{old('servicesOther')=='Other (please specify)' ? 'checked' :'' }}>
                                                 <span>Other (please specify)</span>
                                             </label>
                                             <div>
                                                 <input type="text" name="servicesOtherVal" id="other-service-input"
-                                                    placeholder="Please specify..."
+                                                    placeholder="Please specify..." value="{{old('servicesOtherVal')}}"
                                                     style="display: none; margin-top: 10px;">
                                                 {{-- <input type="text" name="" id=""> --}}
                                             </div>
@@ -293,32 +295,32 @@
                                                 Membership?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="goal1" class="goal-option"
-                                                    value="Grow my business">
+                                                    value="Grow my business" {{old('goal1')=='Grow my business' ? 'checked' :'' }}>
                                                 <span>Grow my business</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="goal2" class="goal-option"
-                                                    value="Meet and collaborate with -other entrepreneurs">
+                                                    value="Meet and collaborate with -other entrepreneurs" {{old('goal2')=='Meet and collaborate with -other entrepreneurs' ? 'checked' :'' }}>
                                                 <span>Meet and collaborate with -other entrepreneurs</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="goal3" class="goal-option"
-                                                    value="Access creative and -professional resources">
+                                                    value="Access creative and -professional resources" {{old('goal3')=='Access creative and -professional resources' ? 'checked' :'' }}>
                                                 <span>Access creative and -professional resources</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="goal4" class="goal-option"
-                                                    value="Attend events or workshops">
+                                                    value="Attend events or workshops" {{old('goal4')=='Attend events or workshops' ? 'checked' :'' }}>
                                                 <span>Attend events or workshops</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="goalOther" id="goalOtherBtn"
-                                                    value="Other (please specify)">
+                                                    value="Other (please specify)" {{old('goalOther')=='Other (please specify)' ? 'checked' :'' }}>
                                                 <span>Other (please specify)</span>
                                             </label>
                                             <div>
                                                 <input type="text" name="goalOtherVal" id="other-goal-input"
-                                                    placeholder="Please specify..."
+                                                    placeholder="Please specify..." value="{{old('goalOtherVal')}}"
                                                     style="display: none; margin-top: 10px;">
                                                 {{-- <input type="text" name="" id=""> --}}
                                             </div>
@@ -331,17 +333,17 @@
                                                 initiative?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="current_project" id="current_project_no"
-                                                    class="specific-project" value="No">
+                                                    class="specific-project" value="No" {{old('current_project')=='No' ? 'checked' :'' }}>
                                                 <span>No</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="current_project" id="current_project_yes"
-                                                    value="If yes, please briefly describe it">
+                                                    value="If yes, please briefly describe it" {{old('current_project')=='If yes, please briefly describe it' ? 'checked' :'' }}>
                                                 <span>If yes, please briefly describe it</span>
                                             </label>
                                             <div>
                                                 <input type="text" name="current_projectVal" id="current_projectVal"
-                                                    placeholder="Please specify..."
+                                                    placeholder="Please specify..." value="{{old('current_projectVal')}}"
                                                     style="display: none; margin-top: 10px;">
                                             </div>
                                             <span class="text-danger" id="current_projectError"></span>
@@ -351,14 +353,14 @@
                                         <div class="form-group">
                                             <label for="tour">Is there anything specific you’d like to learn or see
                                                 during your tour?</label>
-                                            <textarea id="tour" name="tour" placeholder="Tell something..." rows="5"></textarea>
+                                            <textarea id="tour" name="tour" placeholder="Tell something..." rows="5">{{old('tour')}}</textarea>
                                             <p class="text-danger" id="tourError"></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="about">Anything else you’d like us to know about you?</label>
-                                            <textarea id="about" name="about" placeholder="Tell something..." rows="5"></textarea>
+                                            <textarea id="about" name="about" placeholder="Tell something..." rows="5">{{old('about')}}</textarea>
                                             <p class="text-danger" id="aboutError"></p>
                                         </div>
                                     </div>
