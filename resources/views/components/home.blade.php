@@ -348,10 +348,16 @@
                                 }, 3000);
                                 // });
                             } else {
-                                for (let i in result.errors) {
-                                    alert(result.errors[i]);
-                                }
                                 let subscriptionForm = document.getElementById('subscriptionForm');
+
+                                for (let i in result.errors) {
+                                    console.log(i);
+
+                                    if(i=='email'){
+                                        $('#emailPopupError').text(result.errors[i]);
+                                    }
+                                    // alert();
+                                }
                                 subscriptionForm.abrform.disabled = false;
                                 subscriptionForm.abrform.value = "Subscribe Now";
                             }
