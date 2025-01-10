@@ -141,7 +141,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
-                        <div class="cta-box" style="background-image: url('assets/images/cta-box-bg.png')">
+                        <div class="cta-box" style="border: 3px solid #ffffff;">
                             <h2 class="title_one">Book Your Event Today</h2>
                             <p class="abr-para pt-3 pb-3">
                                 Let’s make your event one to remember. Contact us now to check availability, explore catering options, and secure your date. Your perfect celebration starts here!
@@ -153,24 +153,6 @@
             </div>
         </div>
 
-
-        <!-- marquee area starts -->
-        <div class="custom-marquee marquee-style-2">
-            <div class="marquee-container">
-                <div class="marquee">
-                    <div class="marquee-content marquee-row-1">
-                        <span>Community</span><span>Collaboration</span><span>Creativity</span><span>Connection</span><span>Flavor</span><span>Growth</span><span>Support</span><span>Inspiration</span><span>Relaxation</span>
-                        <span>Community</span><span>Collaboration</span><span>Creativity</span><span>Connection</span><span>Flavor</span><span>Growth</span><span>Support</span><span>Inspiration</span><span>Relaxation</span>
-                        <span>Community</span><span>Collaboration</span><span>Creativity</span><span>Connection</span><span>Flavor</span><span>Growth</span><span>Support</span><span>Inspiration</span><span>Relaxation</span>
-                    </div>
-                    <div class="marquee-content marquee-row-2">
-                        <span>Networking</span><span>Innovation</span><span>Local</span><span>Togetherness</span><span>Empowerment</span><span>Vibes</span><span>Energy</span><span>Passion</span><span>Flavorful</span>
-                        <span>Networking</span><span>Innovation</span><span>Local</span><span>Togetherness</span><span>Empowerment</span><span>Vibes</span><span>Energy</span><span>Passion</span><span>Flavorful</span>
-                        <span>Networking</span><span>Innovation</span><span>Local</span><span>Togetherness</span><span>Empowerment</span><span>Vibes</span><span>Energy</span><span>Passion</span><span>Flavorful</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         @include('include.foot')
 

@@ -73,7 +73,7 @@
                                 5725 NORTHAMPTON BLVD, VIRGINIA BEACH VA 23455
                             </h4>
                             <div class="hero-btn-group-2">
-                                <a href="javascript:void(0);" class="primary-btn">Directory</a>
+                                <a href="/directory" class="primary-btn">Directory</a>
                                 <a href="javascript:void(0);" class="primary-btn">Events</a>
                                 {{--                            <div class="hero-video-wrapper"> --}}
                                 {{--                                <a class="hero-play-btn popup-youtube" href="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span class="video-btn item-pulse"><i class="fas fa-play"></i></span> play video</a> --}}
@@ -141,21 +141,21 @@
 
 
         <!-- about area starts -->
-        <section class="about-home-2 pt-110 pb-30">
+        <section class="about-home-2 pt-110 pb-30" style="border-bottom: 4px solid #e1612e;border-top: 4px solid #e1612e;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 offset-lg-1">
                         <img src="assets/images/choose1.png" alt="about-image">
                     </div>
                     <div class="col-lg-5 offset-lg-1">
-                        <div class="about-content">
+                        <div class="about-content" style="padding-top: 5rem;">
                             <div class="section-top-2">
-                                <span class="title-tag">
-                                    Taste, Create, and Thrive
-                                </span>
+{{--                                <span class="title-tag">--}}
+{{--                                    Taste, Create, and Thrive--}}
+{{--                                </span>--}}
                                 <h2 class="title_one">
                                     <span>
-                                        A Home For Entrepreneurs & Dreamers
+                                        Taste, Create, and Thrive
                                     </span>
                                 </h2>
                             </div>
@@ -182,7 +182,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="section-top-2">
-                            <span class="title-tag">What we offer</span>
+{{--                            <span class="title-tag">What we offer</span>--}}
                             <h2 class="title_one">
                                 <span>
                                     Experience the Perfect Blend of Taste, Relaxation, and Innovation
@@ -200,6 +200,37 @@
 
             <div class="container-fluid px-0">
                 <div class="service-items mt-60">
+                    <div class="single-service-2">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="service-title">
+                                    <div>
+{{--                                        <img src="assets/images/logo.png" alt="choose-image">--}}
+                                    </div>
+                                    <h2 class="text-uppercase"><a href="javascript:void(0);">80/20 Eatery</a></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="service-image">
+                                    <img src="assets/shapes/shape3.png" alt="service-image">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="service-content">
+                                    <p>
+                                        The 80/20 Eatery is a flavor-packed destination where every bite tells a story.
+                                        Featuring four unique
+                                        restaurants, a juice bar, and mouthwatering dishes made to satisfy every craving,
+                                        we’re redefining
+                                        the way you enjoy food. Pair incredible meals with hookah, vibrant nightlife, and a
+                                        community-driven
+                                        vibe, and you’ve got more than an eatery—you’ve got an experience you’ll keep coming
+                                        back for.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="single-service-2">
                         <div class="row align-items-center">
                             <div class="col-lg-4">
@@ -251,74 +282,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-service-2">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4">
-                                <div class="service-title">
-                                    <h2 class="text-uppercase"><a href="javascript:void(0);">80/20 Eatery</a></h2>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-image">
-                                    <img src="assets/shapes/shape3.png" alt="service-image">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-content">
-                                    <p>
-                                        The 80/20 Eatery is a flavor-packed destination where every bite tells a story.
-                                        Featuring four unique
-                                        restaurants, a juice bar, and mouthwatering dishes made to satisfy every craving,
-                                        we’re redefining
-                                        the way you enjoy food. Pair incredible meals with hookah, vibrant nightlife, and a
-                                        community-driven
-                                        vibe, and you’ve got more than an eatery—you’ve got an experience you’ll keep coming
-                                        back for.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- choose area starts -->
-        <section class="choose-home-2 py-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 offset-lg-1">
-                        <img src="assets/images/about1.png" alt="choose-image">
-                    </div>
-                    <div class="col-lg-5 offset-lg-1">
-                        <div class="choose-content">
-                            <div class="section-top-2">
-                                <span class="title-tag">Why Choose Us</span>
-                                <h2 class="title_one">
-                                    <span>What Makes Us Your Perfect Choice</span>
-                                </h2>
-                            </div>
-                            <p class="pt-20 abr-para">
-                                80/20 Eatery isn’t just another place to grab a bite—it’s a destination where flavor,
-                                community, and
-                                opportunity collide. With mouthwatering food from diverse restaurants, a relaxed yet vibrant
-                                atmosphere,
-                                and spaces designed for networking and creativity, we offer a one-of-a-kind experience that
-                                fuels your
-                                body, mind, and business. Whether you’re here to savor bold flavors, connect with
-                                like-minded individuals,
-                                or unwind after a long day, 80/20 Eatery is the perfect spot to do it all.
-                            </p>
-                            {{--                        <ul class="about-list pt-3"> --}}
-                            {{--                            <li>A space where connection, collaboration, and local growth thrive.</li> --}}
-                            {{--                            <li>Fresh juices, hookahs, and a creative workspace—all in one place.</li> --}}
-                            {{--                        </ul> --}}
-                            {{--                        <a href="about.html" class="primary-btn mt-40">see more <span><i class="ri-arrow-right-up-line"></i></span></a> --}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- marquee area starts -->
         <div class="custom-marquee marquee-style-2">
