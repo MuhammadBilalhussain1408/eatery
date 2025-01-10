@@ -196,12 +196,12 @@
                                                 business address? <br> <span> (Mailbox +$25 monthly)</span></label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="interested_in_use"
-                                                    id="interested_in_use_yes" value="Yes"  {{old('interested_in_use_yes')=='Yes' ? 'checked' :'' }}>
+                                                    id="interested_in_use_yes" value="Yes"  {{old('interested_in_use')=='Yes' ? 'checked' :'' }}>
                                                 <span>Yes</span>
                                             </label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="interested_in_use" id="interested_in_use_no"
-                                                    value="No"  {{old('interested_in_use_yes')=='No' ? 'checked' :'' }}>
+                                                    value="No"  {{old('interested_in_use')=='No' ? 'checked' :'' }}>
                                                 <span>No</span>
                                             </label>
                                             <p class="text-danger" id="interested_inError"></p>
