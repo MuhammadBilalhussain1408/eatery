@@ -35,8 +35,8 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="section-top mb-50">
-                            <h2 class="title_one text-white">
-                                let us know how we can <span>help</span>
+                            <h2 class="title_one text-white text-capitalize">
+                                let us know how we can <span>help!</span>
                             </h2>
                         </div>
                         <img src="assets/images/contact-form-image.png" alt="contact-image">

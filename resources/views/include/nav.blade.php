@@ -13,13 +13,13 @@
                 <div class="col-lg-9 d-none d-lg-block">
                     <nav id="mobile-menu">
                         <ul class="main-menu">
-                            <li><a href="/">Home</a></li>
+{{--                            <li><a href="/">Home</a></li>--}}
                             <li><a href="/about-us">About Us</a></li>
                             <li><a href="/directory">Directory</a></li>
                             <li><a href="javascript:void(0);">Calendar</a></li>
                             <li><a href="/private-events">Private Events</a></li>
                             <li><a href="/ceo-workspace">Membership</a></li>
-                            <li><a href="javascript:void(0);">Press</a></li>
+                            <li><a href="javascript:void(0);">Gallery</a></li>
                             <li><a href="/contact">contact</a></li>
                             <li class="mobile-btn">
                                 <a style="border-bottom: 1px solid rgba(255, 255, 255, 0.5);" href="/membership-subscription">

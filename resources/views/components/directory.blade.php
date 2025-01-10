@@ -14,7 +14,7 @@
             border: 1px solid #ffffff;
         }
         .brand-items .brand-logo {
-            border: 3px solid #e2612e;
+            border: 8px solid #e2612e;
             background-color: white;
         }
         .brand-items .brand-logo img.v1 {
