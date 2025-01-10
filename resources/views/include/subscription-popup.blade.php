@@ -88,7 +88,7 @@
                                    name="email"
                                    required
                                    placeholder="Your Email*">
-                                   <h6 class="text-white pt-3" id="emailPopupError"></h6>
+                                   <h6 class="text-white pt-3 d-none" id="emailPopupError"></h6>
 
                             <input class="subscription-input-fields"
                                    type="tel"

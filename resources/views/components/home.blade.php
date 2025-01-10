@@ -354,6 +354,7 @@
                                     console.log(i);
 
                                     if(i=='email'){
+                                        $('#emailPopupError').removeClass('d-none')
                                         $('#emailPopupError').text(result.errors[i]);
                                     }
                                     // alert();
