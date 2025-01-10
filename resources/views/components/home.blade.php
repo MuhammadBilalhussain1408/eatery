@@ -73,8 +73,8 @@
                                 5725 NORTHAMPTON BLVD, VIRGINIA BEACH VA 23455
                             </h4>
                             <div class="hero-btn-group-2">
-                                <a href="/directory" class="primary-btn">Directory</a>
-                                <a href="javascript:void(0);" class="primary-btn">Events</a>
+                                <a href="/directory" class="primary-btn" style="border-radius: 10px;width: 123px;">Directory</a>
+                                <a href="javascript:void(0);" class="primary-btn" style="border-radius: 10px;width: 123px;">Events</a>
                                 {{--                            <div class="hero-video-wrapper"> --}}
                                 {{--                                <a class="hero-play-btn popup-youtube" href="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span class="video-btn item-pulse"><i class="fas fa-play"></i></span> play video</a> --}}
                                 {{--                            </div> --}}
@@ -141,7 +141,7 @@
 
 
         <!-- about area starts -->
-        <section class="about-home-2 pt-110 pb-30" style="border-bottom: 4px solid #e1612e;border-top: 4px solid #e1612e;">
+        <section class="about-home-2 pt-110 pb-110" style="border-bottom: 4px solid #e1612e;border-top: 4px solid #e1612e;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 offset-lg-1">

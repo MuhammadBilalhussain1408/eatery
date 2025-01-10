@@ -192,6 +192,15 @@
         .menu-area {
             border-bottom: 1px solid #ffffffc4;
         }
+        .footer-widget-box-3.about-us .footer-social-3 li a {
+            border-radius: 10px;
+        }
+        .copyright-2 .copyright-content {
+            border-top: 1px solid #ffffff;
+        }
+        .footer-widget-box-2.contact-widget ul li {
+            border-bottom: 1px solid #adadad;
+        }
 
 
 
