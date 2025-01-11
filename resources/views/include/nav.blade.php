@@ -6,8 +6,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-1">
                     <div class="logo-area">
-                        <a class="dark-version" href="/"> <img src="assets/images/logo.png" alt="logo"></a>
-                        <a class="light-version" href="/"> <img src="assets/images/logo-black.png" alt="logo"></a>
+                        <a class="dark-version" href="/"> <img src="assets/images/templatelogo.png" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-9 d-none d-lg-block">
