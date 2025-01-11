@@ -108,27 +108,27 @@
                                 <tr>
                                     <td class="sm-px-24"
                                         style="background-color: #ffffff; border-radius: 4px; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif; font-size: 14px; line-height: 24px; padding: 48px; text-align: left; color: black;">
-                                        <p style="font-weight: 700; font-size: 20px; margin-top: 0; color: #ff5850; text-align: center;">
+                                        <p style="font-family: 'DM Sans',serif;font-weight: bold; font-size: 25px; margin-top: 0; color: #ff5850; text-align: center;">
                                             Hi "{{$data['name']}}",
                                         </p>
-                                        <p style=" font-size: 16px; margin-top: 0; text-align: center;">
+                                        <p style="font-family: 'DM Sans',serif;font-size: 19px; margin-top: 0; text-align: center;">
                                             Thank you for reaching out to us! We appreciate your interest and can’t wait to connect with you!
                                             Our team will follow up with you shortly to schedule your tour and discuss how we can help you thrive at the 80/20 CEO Workspace.
                                         </p>
-                                        <table style="width: 100%;padding-top: 12px;">
+                                        <table style="font-family: 'DM Sans',serif;width: 100%;padding-top: 12px;font-size: 19px;">
                                             <tr>
-                                                <td colspan="2">The 80/20 Eatery Team</td>
+                                                <td colspan="2" style="padding-bottom: 10px;">The 80/20 Eatery Team</td>
                                             </tr>
                                             <tr>
-                                                <td style="width: 50%;">Phone</td>
+                                                <td style="width: 50%;font-weight: bold;">Phone</td>
                                                 <td style="width: 50%;"> (+1) 757-271-4001</td>
                                             </tr>
                                             <tr>
-                                                <td style="width: 50%;">Email</td>
+                                                <td style="width: 50%;font-weight: bold;">Email</td>
                                                 <td style="width: 50%;">info@8020eatery.com</td>
                                             </tr>
                                             <tr>
-                                                <td style="width: 50%;">Website</td>
+                                                <td style="width: 50%;font-weight: bold;">Website</td>
                                                 <td style="width: 50%;">www.8020eatery.com</td>
                                             </tr>
                                         </table>

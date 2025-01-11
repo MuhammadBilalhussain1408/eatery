@@ -139,6 +139,18 @@
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
                                                     <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
+                                                        Phone Number
+                                                    </span>
+                                                </td>
+                                                <td style="padding: 5px;font-size: 16px; color: black; font-weight: 400;border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;">
+                                                    <span>
+                                                        {{@$data['phone']}}
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr style="display: grid;">
+                                                <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Why are you interested in becoming an 80/20 CEO member?
                                                     </span>
                                                 </td>
