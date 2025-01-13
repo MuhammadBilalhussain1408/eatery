@@ -235,6 +235,42 @@
                                             <tr style="display: grid;">
                                                 <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
                                                     <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
+                                                        Does your business need a dedicated space for product creation
+                                                    </span>
+                                                </td>
+                                                <td style="padding: 5px;font-size: 16px; color: black; font-weight: 400;border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;">
+                                                    <span>
+                                                        Yes or No
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr style="display: grid;">
+                                                <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
+                                                        How long have you been in business?
+                                                    </span>
+                                                </td>
+                                                <td style="padding: 5px;font-size: 16px; color: black; font-weight: 400;border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;">
+                                                    <span>
+                                                        Ok
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr style="display: grid;">
+                                                <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
+                                                        Do you have your LLC, or do you need assistance in getting one for your business?
+                                                    </span>
+                                                </td>
+                                                <td style="padding: 5px;font-size: 16px; color: black; font-weight: 400;border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;">
+                                                    <span>
+                                                        Ok
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr style="display: grid;">
+                                                <td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;padding: 5px;">
+                                                    <span style="font-family: 'DM Sans',serif;font-weight: bold; color: black; font-size: 20px;">
                                                         Is there anything specific you’d like to learn or see during your tour?
                                                     </span>
                                                 </td>
