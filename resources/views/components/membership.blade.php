@@ -357,29 +357,33 @@
                                                 </span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="checkbox" name="need_a_dedicated_space"
-                                                       id="need_a_dedicated_space" value="Yes">
+                                                <input type="radio" name="req_dedicated_space"
+                                                       id="need_a_dedicated_space_yes" value="Yes" {{old('req_dedicated_space')=='Yes' ? 'checked' :'' }}>
                                                 <span>Yes</span>
                                             </label>
                                             <label class="budget-option">
-                                                <input type="checkbox" name="need_a_dedicated_space"
-                                                       value="No">
+                                                <input type="radio" name="req_dedicated_space"
+                                                id="need_a_dedicated_space_no"
+                                                       value="No" {{old('req_dedicated_space')=='No' ? 'checked' :'' }}>
                                                 <span>No</span>
                                             </label>
+                                            <span class="text-danger" id="need_a_dedicated_spaceErr"></span>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="been_in_business"><span style="color: #ffff00;">9-</span> How long have you been in business?</label>
-                                            <input type="text" id="been_in_business" name="been_in_business"
-                                                   placeholder="Tell something...">
+                                            <input type="text" id="been_in_business" name="how_long_in_business"
+                                                   placeholder="Tell something..." value="{{old('how_long_in_business')}}">
+                                                   <p class="text-danger" id="howLongBusinessError"></p>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="LLC"><span style="color: #ffff00;">10-</span> Do you have your LLC, or do you need assistance in getting one for your business?</label>
-                                            <input type="text" id="LLC" name="LLC"
-                                                   placeholder="Tell something...">
+                                            <input type="text" id="LLC" name="have_llc"
+                                                   placeholder="Tell something..." value="{{old('have_llc')}}">
+                                            <p class="text-danger" id="LLCError"></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -487,6 +491,10 @@
                 let current_project_no = document.getElementById('current_project_no');
                 let current_project_yes = document.getElementById('current_project_yes');
                 let current_projectVal = document.getElementById('current_projectVal');
+                let need_a_dedicated_space_yes = document.getElementById('need_a_dedicated_space_yes');
+                let need_a_dedicated_space_no = document.getElementById('need_a_dedicated_space_no');
+                let been_in_business = document.getElementById('been_in_business');
+                let LLC = document.getElementById('LLC');
                 let tour = document.getElementById('tour');
                 let about = document.getElementById('about');
 
@@ -501,6 +509,9 @@
                 let servicesError = document.getElementById('servicesError');
                 let goalError = document.getElementById('goalError');
                 let current_projectError = document.getElementById('current_projectError');
+                let spaceErr = document.getElementById('need_a_dedicated_spaceErr');
+                let howLongBusinessError = document.getElementById('howLongBusinessError');
+                let LLCError = document.getElementById('LLCError');
                 let tourError = document.getElementById('tourError');
                 let aboutError = document.getElementById('aboutError');
                 //Make old errors empty
@@ -514,6 +525,7 @@
                 servicesError.textContent = '';
                 goalError.textContent = '';
                 current_projectError.textContent = '';
+                spaceErr.textContent = '';
                 tourError.textContent = '';
                 aboutError.textContent = '';
                 let isValid = true;
@@ -605,9 +617,25 @@
                     scrollToReqEle(current_projectError);
                     isValid = false;
                 }
+                if (!need_a_dedicated_space_yes.checked &&
+                    !need_a_dedicated_space_no.checked) {
+                    spaceErr.textContent = 'Please Select Atleast One option';
+                    scrollToReqEle(spaceErr);
+                    isValid = false;
+                }
                 if (current_project_yes.checked && !current_projectVal.value.trim()) {
                     current_projectError.textContent = 'Enter Some value';
                     scrollToReqEle(current_projectError);
+                    isValid = false;
+                }
+                if (!been_in_business.value.trim()) {
+                    howLongBusinessError.textContent = 'Please Enter Some Details';
+                    scrollToReqEle(howLongBusinessError);
+                    isValid = false;
+                }
+                if (!LLC.value.trim()) {
+                    LLCError.textContent = 'Please Enter Some Details';
+                    scrollToReqEle(LLCError);
                     isValid = false;
                 }
                 if (!tour.value.trim()) {

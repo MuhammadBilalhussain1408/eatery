@@ -240,7 +240,7 @@
                                                 </td>
                                                 <td style="padding: 5px;font-size: 16px; color: black; font-weight: 400;border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;">
                                                     <span>
-                                                        Yes or No
+                                                        {{@$data['req_dedicated_space'] ? @$data['req_dedicated_space'] :'No'}}
                                                     </span>
                                                 </td>
                                             </tr>
@@ -252,7 +252,7 @@
                                                 </td>
                                                 <td style="padding: 5px;font-size: 16px; color: black; font-weight: 400;border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;">
                                                     <span>
-                                                        Ok
+                                                        {{@$data['how_long_in_business']}}
                                                     </span>
                                                 </td>
                                             </tr>
@@ -264,7 +264,7 @@
                                                 </td>
                                                 <td style="padding: 5px;font-size: 16px; color: black; font-weight: 400;border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;">
                                                     <span>
-                                                        Ok
+                                                        {{@$data['have_llc']}}
                                                     </span>
                                                 </td>
                                             </tr>
