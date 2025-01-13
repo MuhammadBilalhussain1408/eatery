@@ -118,6 +118,9 @@ class MembershipController extends Controller
                 'goals' => implode(',', $goals),
                 "current_project" => $request->current_project,
                 "current_projectVal" => $request->current_projectVal,
+                "req_dedicated_space" => $request->req_dedicated_space,
+                "how_long_in_business" => $request->how_long_in_business,
+                "have_llc" => $request->have_llc,
                 "tour" => $request->tour,
                 "about" => $request->about,
             ];
