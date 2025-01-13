@@ -131,7 +131,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="budget-options form-group">
-                                            <label class="pb-3">Why are you interested in becoming an 80/20 CEO
+                                            <label class="pb-3"><span style="color: #ffff00;">1-</span> Why are you interested in becoming an 80/20 CEO
                                                 member?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="is_becoming_member1"
@@ -161,7 +161,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="budget-options form-group">
-                                            <label class="pb-3">What type of Membership are you looking for?</label>
+                                            <label class="pb-3"><span style="color: #ffff00;">2-</span> What type of Membership are you looking for?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="membership1" class="membership-option"
                                                     value="Restaurant discounts"  {{old('membership1')=='Restaurant discounts' ? 'checked' :'' }}>
@@ -192,7 +192,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="budget-options form-group">
-                                            <label class="pb-3">Are you interested in using the 80/20 Eatery as your
+                                            <label class="pb-3"><span style="color: #ffff00;">3-</span> Are you interested in using the 80/20 Eatery as your
                                                 business address? <br> <span> (Mailbox +$25 monthly)</span></label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="interested_in_use"
@@ -209,7 +209,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="budget-options form-group">
-                                            <label class="pb-3">Do you need assistance with any of the following?</label>
+                                            <label class="pb-3"><span style="color: #ffff00;">4-</span> Do you need assistance with any of the following?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="assistance1" class="assistance-option"
                                                     value="Website Creation or Redesign" {{old('assistance1')=='Website Creation or Redesign' ? 'checked' :'' }}>
@@ -241,7 +241,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="budget-options form-group">
-                                            <label class="pb-3">What services or amenities are most important to
+                                            <label class="pb-3"><span style="color: #ffff00;">5-</span> What services or amenities are most important to
                                                 you?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="services1" class="services-option"
@@ -291,7 +291,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="budget-options form-group">
-                                            <label class="pb-3">What are your goals for joining the 80/20 CEO
+                                            <label class="pb-3"><span style="color: #ffff00;">6-</span> What are your goals for joining the 80/20 CEO
                                                 Membership?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="goal1" class="goal-option"
@@ -329,7 +329,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="budget-options form-group">
-                                            <label class="pb-3">Are you currently working on a specific project or
+                                            <label class="pb-3"><span style="color: #ffff00;">7-</span> Are you currently working on a specific project or
                                                 initiative?</label>
                                             <label class="budget-option">
                                                 <input type="checkbox" name="current_project" id="current_project_no"
@@ -347,6 +347,39 @@
                                                     style="display: none; margin-top: 10px;">
                                             </div>
                                             <span class="text-danger" id="current_projectError"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="budget-options form-group">
+                                            <label class="pb-3"><span style="color: #ffff00;">8-</span>
+                                                Does your business need a dedicated space for product creation
+                                                <br> <span> (e.g., oils, herbal teas, sewing, art, body butters, etc.)?
+                                                </span>
+                                            </label>
+                                            <label class="budget-option">
+                                                <input type="checkbox" name="need_a_dedicated_space"
+                                                       id="need_a_dedicated_space" value="Yes">
+                                                <span>Yes</span>
+                                            </label>
+                                            <label class="budget-option">
+                                                <input type="checkbox" name="need_a_dedicated_space"
+                                                       value="No">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="been_in_business"><span style="color: #ffff00;">9-</span> How long have you been in business?</label>
+                                            <input type="text" id="been_in_business" name="been_in_business"
+                                                   placeholder="Tell something...">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="LLC"><span style="color: #ffff00;">10-</span> Do you have your LLC, or do you need assistance in getting one for your business?</label>
+                                            <input type="text" id="LLC" name="LLC"
+                                                   placeholder="Tell something...">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
