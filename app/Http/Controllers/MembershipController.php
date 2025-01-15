@@ -126,7 +126,7 @@ class MembershipController extends Controller
             ];
             // dd($request);
             $membership = MembershipDetail::create($reqArr);
-            Mail::to($membership->email)->send(new MembershipMailAdmin($membership));
+            Mail::to('info@8020eatery.com')->send(new MembershipMailAdmin($membership));
             Mail::to($membership->email)->send(new MembershipMail($membership));
             return view('components.membership.thankyou')->with('name', $request->name);
         } else {

@@ -217,6 +217,13 @@
                     </div>
                 </div>
                 <div class="row pt-90">
+                    <p class="abr-para">
+                        The 80/20 Eatery is a vibrant hub where every bite is a flavorful journey. With four diverse restaurants,
+                        a refreshing juice bar, and irresistible dishes to satisfy every craving, we’re elevating your
+                        dining experience. Combine delicious food with premium hookah, lively nightlife, and a strong
+                        sense of community, and you’ll find more than just a place to eat—you’ll discover an
+                        experience you’ll want to relive again and again!
+                    </p>
                     <div class="brand-items pt-3 pb-5">
                         <div class="brand-single-2">
                             <div class="brand-logo dark-version">

@@ -204,8 +204,8 @@
                         <div class="row align-items-center">
                             <div class="col-lg-4">
                                 <div class="service-title">
-                                    <div>
-{{--                                        <img src="assets/images/logo.png" alt="choose-image">--}}
+                                    <div class="pb-3">
+                                        <img src="assets/images/templatelogo.png" alt="choose-image" style="width: 34%;">
                                     </div>
                                     <h2 class="text-uppercase"><a href="javascript:void(0);">80/20 Eatery</a></h2>
                                 </div>
@@ -235,6 +235,9 @@
                         <div class="row align-items-center">
                             <div class="col-lg-4">
                                 <div class="service-title">
+                                    <div class="pb-3">
+                                        <img src="assets/brand/v1.png" alt="choose-image" style="width: 60%;">
+                                    </div>
                                     <h2 class="text-uppercase"><a href="javascript:void(0);">80/20 CEO</a></h2>
                                 </div>
                             </div>
@@ -260,6 +263,9 @@
                         <div class="row align-items-center">
                             <div class="col-lg-4">
                                 <div class="service-title">
+                                    <div class="pb-3">
+                                        <img src="assets/brand/v2.png" alt="choose-image" style="width: 60%;">
+                                    </div>
                                     <h2 class="text-uppercase"><a href="javascript:void(0);">80/20 Juice Bar</a></h2>
                                 </div>
                             </div>

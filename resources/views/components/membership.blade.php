@@ -42,6 +42,10 @@
             margin-bottom: 10px;
             border: 1px solid white;
         }
+        button[disabled], html input[disabled] {
+            cursor: not-allowed !important;
+            background-color: rgb(229, 229, 229) !important;
+        }
 
         /*For Mobiles*/
 

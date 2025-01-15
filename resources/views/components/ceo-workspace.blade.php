@@ -144,6 +144,9 @@
         .plan-select.btn-plan-2 {
             padding-top: 11.7rem !important;
         }
+        .plan-select.btn-plan-3 {
+            padding-top: 14.2rem !important;
+        }
         .bullets{
             padding-left: 42px;
             padding-top: 4px;
@@ -177,6 +180,9 @@
                 padding-top: 30px !important;
             }
             .plan-select.btn-plan-2 {
+                padding-top: 30px !important;
+            }
+            .plan-select.btn-plan-3 {
                 padding-top: 30px !important;
             }
             .case-details-content h2 {
@@ -260,12 +266,12 @@
                         <ul class="plan-features">
                             <li><i class="fa-solid fa-circle-check"></i> Health is Wealth Membership perks</li>
                             <li><i class="fa-solid fa-circle-check"></i> Essential CEO Membership perks</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Printing Room</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Printing Discounts</li>
                             <li><i class="fa-solid fa-circle-check"></i> VIP Lounges</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Fun Breaks</li>
+{{--                            <li><i class="fa-solid fa-circle-check"></i> Fun Breaks</li>--}}
                             <li><i class="fa-solid fa-circle-check"></i> Selfie Spots</li>
                         </ul>
-                        <div class="plan-select btn-plan-2"><a href="">Select Plan</a></div>
+                        <div class="plan-select btn-plan-3"><a href="">Select Plan</a></div>
                     </div>
                     <div class="plan col-md-3 col-sm-12">
                         <header>
@@ -288,7 +294,7 @@
 
                 <!-- Section Starts -->
 
-                <div class="pt-5">
+                <div class="pt-5" style="border-bottom: 2px solid #ffff00;">
                     <h2>1- On My 80 Membership</h2>
                     <span class="pricing-ceo">$30/month</span>
                     <p class="pt-20 abr-para">
@@ -325,7 +331,7 @@
 
                 <!-- Section Starts -->
 
-                <div class="pt-5">
+                <div class="pt-5" style="border-bottom: 2px solid #ffff00;">
                     <h2>2- The Essential CEO Membership</h2>
                     <span class="pricing-ceo">$50/month</span>
                     <p class="pt-20 abr-para">
@@ -384,7 +390,7 @@
 
                 <!-- Section Starts -->
 
-                <div class="pt-5">
+                <div class="pt-5" style="border-bottom: 2px solid #ffff00;">
                     <h2>3- The Executive Membership</h2>
                     <span class="pricing-ceo">$75/month</span>
                     <p class="pt-20 abr-para">
@@ -427,7 +433,7 @@
 
                 <!-- Section Starts -->
 
-                <div class="pt-5">
+                <div class="pt-5" style="border-bottom: 2px solid #ffff00;">
                     <h2>4- The VIP CEO Membership</h2>
                     <span class="pricing-ceo">$150/month</span>
                     <p class="pt-20 abr-para">
@@ -478,7 +484,7 @@
 
                 <!-- Section Starts -->
 
-                <div class="pt-5">
+                <div class="pt-5" style="border-bottom: 2px solid #ffff00;">
 
                     <h2>Additional Perks Coming Soon (Included for All Memberships)</h2>
 
