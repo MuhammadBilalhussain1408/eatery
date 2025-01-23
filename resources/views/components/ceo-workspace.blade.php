@@ -58,7 +58,7 @@
             transition: all 0.25s ease-out;
         }
         .snip1404 header {
-            background-color: #5f3047;
+            background-color: #e1612e;
             color: #ffffff;
         }
         .snip1404 .plan-title {
@@ -153,6 +153,40 @@
             font-size: 22px;
         }
 
+        /*Gallery CSS*/
+
+        .main .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3rem;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        .main .card {
+            color: #252a32;
+            border-radius: 2px;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+        }
+        .main .card-image {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding-top: 70%;
+            background: #ffffff;
+        }
+        .main .card-image img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
 
         @media only screen and (min-width: 360px) and (max-width: 740px), only screen and (min-width: 412px) and (max-width: 915px), only screen and (min-width: 767px) and (max-width: 991px) {
 
@@ -191,6 +225,11 @@
             span.pricing-ceo {
                 font-size: 26px;
             }
+            .main .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 3rem;
+            }
 
         }
 
@@ -214,6 +253,59 @@
             </div>
         </section>
 
+        <!-- Images section starts -->
+        <section class="welcome-section-about pt-110 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-top">
+                            <p class="abr-para pt-2">
+                                The 80/20 CEO Membership offers the ultimate workspace experience for entrepreneurs, business owners,
+                                and creatives. This all-inclusive membership provides access to high-speed Wi-Fi, private rooms for
+                                podcasting, meetings, and events, plus exclusive networking opportunities through weekly events and
+                                mixers. Members enjoy perks like discounts on printing, food, drinks, and hookah, as well as access
+                                to VIP lounges, outdoor spaces, and recreational activities like cornhole and pool. With dedicated
+                                amenities, business support, and a vibrant community, the 80/20 CEO Membership is designed to help
+                                you work smarter, connect with like-minded professionals, and balance productivity with relaxation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <main class="main pt-50">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/workspace/w1.jpg') }}" data-fancybox="workspace" data-caption="Caption Images 211">
+                                    <img src="{{ asset('assets/workspace/w1.jpg') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/workspace/w2.jpg') }}" data-fancybox="workspace" data-caption="Caption Images 1">
+                                    <img src="{{ asset('assets/workspace/w2.jpg') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/workspace/w3.jpg') }}" data-fancybox="workspace" data-caption="Caption Images 1">
+                                    <img src="{{ asset('assets/workspace/w3.jpg') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/workspace/w4.jpg') }}" data-fancybox="workspace" data-caption="Caption Images 1">
+                                    <img src="{{ asset('assets/workspace/w4.jpg') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+
         <!-- pricing plans content starts -->
         <section class="case-details-content pt-120 pb-110">
 
@@ -233,7 +325,7 @@
                             <li><i class="fa-solid fa-circle-check"> </i> Relaxation Areas</li>
                             <li><i class="fa-solid fa-circle-check"> </i> Outdoor Lounging</li>
                         </ul>
-                        <div class="plan-select btn-plan-1"><a href="">Select Plan</a></div>
+                        <div class="plan-select btn-plan-1"><a href="https://square.link/u/VV0cX7e8">Select Plan</a></div>
                     </div>
                     <div class="plan col-md-3 col-sm-12">
                         <header>
@@ -254,7 +346,7 @@
                             <li><i class="fa-solid fa-circle-check"></i> Outdoor Spaces</li>
                             <li><i class="fa-solid fa-circle-check"></i> Selfie Spots</li>
                         </ul>
-                        <div class="plan-select"><a href="">Select Plan</a></div>
+                        <div class="plan-select"><a href="https://square.link/u/WQpJIWSd">Select Plan</a></div>
                     </div>
                     <div class="plan col-md-3 col-sm-12 featured">
                         <header>
@@ -271,7 +363,7 @@
 {{--                            <li><i class="fa-solid fa-circle-check"></i> Fun Breaks</li>--}}
                             <li><i class="fa-solid fa-circle-check"></i> Selfie Spots</li>
                         </ul>
-                        <div class="plan-select btn-plan-3"><a href="">Select Plan</a></div>
+                        <div class="plan-select btn-plan-3"><a href="https://square.link/u/MJzvrvMt">Select Plan</a></div>
                     </div>
                     <div class="plan col-md-3 col-sm-12">
                         <header>
@@ -288,7 +380,7 @@
                             <li><i class="fa-solid fa-circle-check"></i> Hookah Savings</li>
                             <li><i class="fa-solid fa-circle-check"></i> VIP Events</li>
                         </ul>
-                        <div class="plan-select btn-plan-2"><a href="">Select Plan</a></div>
+                        <div class="plan-select btn-plan-2"><a href="https://square.link/u/EN62q9dc">Select Plan</a></div>
                     </div>
                 </div>
 
@@ -536,6 +628,7 @@
 
 
         </section>
+
 
 
         @include('include.foot')

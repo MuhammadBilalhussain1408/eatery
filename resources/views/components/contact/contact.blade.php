@@ -10,6 +10,14 @@
             margin: 5px 0;
             font-size: 21px;
         }
+
+        @media only screen and (min-width: 360px) and (max-width: 740px),
+        only screen and (min-width: 412px) and (max-width: 915px),
+        only screen and (min-width: 767px) and (max-width: 991px) {
+
+
+        }
+
     </style>
 
     <div id="scrollsmoother-container">
@@ -39,7 +47,7 @@
                                 let us know how we can <span>help!</span>
                             </h2>
                         </div>
-                        <img src="assets/images/contact-form-image.png" alt="contact-image">
+                        <img class="contact-img" src="{{ asset('assets/images/contact1.jpg') }}" alt="contact-image">
                     </div>
 
                     <div class="col-xl-6 offset-xl-1 col-lg-7">

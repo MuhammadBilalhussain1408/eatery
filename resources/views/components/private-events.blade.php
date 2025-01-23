@@ -17,6 +17,45 @@
             margin: 0;
             padding-right: 13px;
         }
+        .main .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 3rem;
+        }
+
+        /*Gallery CSS*/
+
+        .main .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3rem;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        .main .card {
+            color: #252a32;
+            border-radius: 2px;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+        }
+        .main .card-image {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding-top: 70%;
+            background: #ffffff;
+        }
+        .main .card-image img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
 
         @media only screen and (min-width: 360px) and (max-width: 740px),
         only screen and (min-width: 412px) and (max-width: 915px),
@@ -27,6 +66,11 @@
             }
             .cta-box {
                 background-position: left;
+            }
+            .main .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 3rem;
             }
 
         }
@@ -49,6 +93,49 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Images section starts -->
+        <section class="welcome-section-about pt-110 pb-80">
+            <main class="main pt-50">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="{{ asset('assets/events/p1.jpg') }}" data-fancybox="events" data-caption="Caption Images 211">
+                                <img src="{{ asset('assets/events/p1.jpg') }}" alt="Image Gallery">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="{{ asset('assets/events/p2.jpg') }}" data-fancybox="events" data-caption="Caption Images 1">
+                                <img src="{{ asset('assets/events/p2.jpg') }}" alt="Image Gallery">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="{{ asset('assets/events/p3.jpg') }}" data-fancybox="events" data-caption="Caption Images 1">
+                                <img src="{{ asset('assets/events/p3.jpg') }}" alt="Image Gallery">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="{{ asset('assets/events/p5.jpg') }}" data-fancybox="events" data-caption="Caption Images 1">
+                                <img src="{{ asset('assets/events/p5.jpg') }}" alt="Image Gallery">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="{{ asset('assets/events/p6.jpg') }}" data-fancybox="events" data-caption="Caption Images 1">
+                                <img src="{{ asset('assets/events/p6.jpg') }}" alt="Image Gallery">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </section>
 
         <!-- private section starts -->

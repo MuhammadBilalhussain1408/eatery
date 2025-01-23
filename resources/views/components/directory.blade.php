@@ -254,7 +254,7 @@
                             <div class="brand-logo dark-version">
                                 <img class="v3" src="assets/brand/b1.png" alt="brand-logo">
                                 <div class="middle btn3">
-                                    <a href="javascript:void(0);" class="primary-btn brand-btn">Visit Now</a>
+                                    <a href="https://www.instagram.com/teamlamb_inc/" class="primary-btn brand-btn">Visit Now</a>
                                 </div>
                             </div>
                         </div>

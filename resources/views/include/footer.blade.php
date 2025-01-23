@@ -17,6 +17,8 @@
 <script src="assets/js/easing.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
 
 {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
@@ -36,5 +38,25 @@
     });
 
 </script>
-
+<script>
+    // swiper
+    var mySwiper = new Swiper('.swiper-container', {
+        effect: '',
+        speed: 1000,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: 'true'
+        },
+        loop:true,
+        // autoplay: {
+        //     delay: 2000,
+        // },
+    });
+</script>
 @include('include.subscription-popup')

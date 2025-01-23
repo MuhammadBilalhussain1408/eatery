@@ -46,7 +46,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border: 3px solid white;s
+            border: 3px solid white;
         }
 
         @media only screen and (min-width: 360px) and (max-width: 740px),
