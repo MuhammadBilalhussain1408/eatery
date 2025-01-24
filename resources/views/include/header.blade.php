@@ -204,6 +204,61 @@
         .footer-widget-box-2.contact-widget ul li {
             border-bottom: 1px solid #adadad;
         }
+        .bread-container{
+            background: rgba(0, 0, 0, 0.5);
+            width: 50%;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+        }
+        .breadcrumb-section ul li a {
+            color: black;
+            border: 1px solid #ffffff;
+            background-color: white;
+        }
+        .breadcrumb-section ul li a:hover {
+            color: white;
+            background-color: black;
+            border: 1px solid #000000;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .swiper-full-mobile {
+            position: relative;
+            margin: 50px auto;
+            padding-bottom: 50px;
+        }
+
+        .swiper-full-mobile .swiper-slide {
+            height: 100%;
+        }
+        .swiper-full-mobile .swiper-slide img{
+            width: 100%;
+            height: 530px;
+            object-fit: cover;
+            border: 5px solid white;
+
+        }
+        .swiper-slide.swiper-slide-active img {
+            border-radius: 00px;
+
+        }
+        .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            border-radius: 100%;
+            background: white;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #e2612e;
+        }
 
 
 
@@ -243,6 +298,17 @@
             }
             .copyright-2 .copyright-content {
                 padding: 30px 0 52px;
+            }
+            .menu-area .logo-area .dark-version {
+                display: inline-block;
+                position: relative;
+                z-index: 9999;
+            }
+            .bread-container {
+                background: rgba(0, 0, 0, 0.5);
+                width: 100%;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
             }
 
 

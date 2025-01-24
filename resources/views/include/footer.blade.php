@@ -39,24 +39,126 @@
 
 </script>
 <script>
-    // swiper
-    var mySwiper = new Swiper('.swiper-container', {
-        effect: '',
-        speed: 1000,
-        slidesPerView: 1,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
+    var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        slideToClickedSlide:true,
+        centeredSlides:true,
         pagination: {
             el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: 'true'
+            clickable: true,
+
         },
+        effect: "coverflow",
+        grabCursor: true,
+
+        coverflowEffect: {
+            rotate: -10,
+            stretch: 10,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+
         loop:true,
         // autoplay: {
         //     delay: 2000,
         // },
+
+
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+        },
+
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+
+        breakpoints: {
+
+            640: {
+                freemode:true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            320: {
+                freemode:true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+            }
+        }
+
     });
+
+</script>
+<script>
+
+    // Array of background images
+    const images = [
+        'assets/slider/slider1.jpg',
+        'assets/slider/slider2.jpg',
+        'assets/slider/slider3.jpg',
+        'assets/slider/slider4.jpg',
+        'assets/slider/slider5.jpg',
+        'assets/slider/slider6.jpg',
+        'assets/slider/slider7.jpg',
+    ];
+
+    // Select the slider element
+    const slider = document.querySelector('.slider');
+
+    // Variables for autoplay
+    let currentIndex = 0;
+    const delaySpeed = 3000; // Delay speed in milliseconds (e.g., 5000ms = 5 seconds)
+    let interval; // Store interval ID for autoplay
+
+    // Preload images
+    function preloadImages(imageArray) {
+        imageArray.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+    }
+
+    // Preload all images before starting
+    preloadImages(images);
+
+    // Function to change the background image
+    function changeBackground() {
+        slider.style.backgroundImage = `url(${images[currentIndex]})`;
+
+        // Apply specific styles for certain images
+        if (images[currentIndex] === 'assets/slider/slider2.jpg') {
+            slider.style.backgroundPositionY = '25%'; // For slider2.jpg
+        } else if (images[currentIndex] === 'assets/slider/slider5.jpg') {
+            slider.style.backgroundPositionY = '0%'; // For slider5.jpg
+        } else {
+            slider.style.backgroundPositionY = 'center'; // Default for other images
+        }
+
+        currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
+    }
+
+    // Function to start autoplay
+    function startAutoplay() {
+        changeBackground(); // Set initial background
+        interval = setInterval(changeBackground, delaySpeed); // Automatically change background
+    }
+
+    // Function to pause autoplay
+    function pauseAutoplay() {
+        clearInterval(interval); // Stop changing the background
+    }
+
+    // Start autoplay on page load
+    startAutoplay();
+
+    // Add event listeners for play/pause buttons
+    document.getElementById('play-btn').addEventListener('click', startAutoplay);
+    document.getElementById('pause-btn').addEventListener('click', pauseAutoplay);
 </script>
 @include('include.subscription-popup')

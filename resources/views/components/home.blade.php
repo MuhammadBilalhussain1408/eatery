@@ -153,205 +153,6 @@
         }
 
 
-        /* swiper */
-        .swiper-container {
-            padding: 0;
-            height: 700px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        .swiper-slide {
-            width: 100%;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            background-repeat: no-repeat;
-            background-position: center;
-            padding-top: 6rem;
-        }
-
-        .swiper-slide:after {
-            content: "";
-            background-image: linear-gradient(0deg, black, rgb(0 0 0), rgb(0 0 0));
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            bottom: 0;
-            z-index: 1;
-            opacity: 0.7;
-        }
-
-        .swiper-slide:before {
-            content: "";
-            background-color: rgba(69, 69, 78, 0.2);
-            background-image: linear-gradient(180deg, rgba(255, 234, 213, 0.3), rgba(241, 244, 255, 0.3));
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            bottom: 0;
-            z-index: 1;
-        }
-
-        /* swiper arrows */
-        .swiper-button-prev,
-        .swiper-button-next {
-            width: 50px;
-            height: 50px;
-            background: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .swiper-button-prev {
-            left: 30px;
-        }
-
-        .swiper-button-next {
-            right: 30px;
-        }
-
-        .swiper-button-prev span,
-        .swiper-button-next span {
-            width: 15px;
-            height: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: transparent;
-            position: absolute;
-            border: solid 3px black;
-            border-left: 0;
-            border-bottom: 0;
-            transition: all 0.3s ease;
-        }
-
-        .swiper-button-prev span {
-            transform: rotate(-135deg);
-            left: 44%;
-        }
-
-        .swiper-button-next span {
-            transform: rotate(45deg);
-            right: 50%;
-        }
-
-        .swiper-button-prev span:after,
-        .swiper-button-next span:after {
-            content: "";
-            position: absolute;
-            background-color: white;
-            width: 0px;
-            height: 2px;
-            transition: all 0.3s ease;
-            transform: rotate(-45deg);
-        }
-
-        .swiper-button-prev:hover span {
-            left: 30%;
-        }
-
-        .swiper-button-next:hover span {
-            right: 30%;
-        }
-
-        .swiper-button-prev:hover span:after,
-        .swiper-button-next:hover span:after {
-            width: calc(20px - 4px);
-        }
-
-
-        /* swiper pagination */
-        .swiper-pagination {
-            height: 40px;
-        }
-
-        .swiper-pagination-bullet {
-            background-color: transparent;
-            border: solid 1px white;
-            opacity: 1;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .swiper-pagination-bullet:hover {
-            background-color: white;
-        }
-
-        .swiper-pagination-bullet-active {
-            width: 20px;
-            border-radius: 50px;
-            transition: all 0.3s ease-in-out;
-            left: 0;
-            background-color: transparent;
-            border: solid 1px white;
-        }
-
-        /* text content */
-        .slide-text {
-            text-align: center;
-            color: white;
-            opacity: 1;
-            z-index: 2;
-            width: 100%;
-            max-width: 80%;
-        }
-
-        .slide-text h1 {
-            font-size: 60px;
-        }
-
-        .slide-text p {
-            font-size: 26px;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-
-        /* button */
-        .slide-text .btn {
-            background-color: transparent;
-            border: solid 1px white;
-            padding: 15px 30px;
-            min-width: 100px;
-            width: fit-content;
-            font-size: 14px;
-            letter-spacing: 2px;
-            color: white;
-            position: relative;
-            border-radius: 80px;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        .slide-text .btn:after {
-            content: "";
-            background-color: rgba(255, 255, 255, 0.1);
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            z-index: 2;
-            left: 0px;
-            top: 0px;
-            border-radius: inherit;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .slide-text .btn:hover::after {
-            left: 4px;
-            top: 5px;
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-
-        .slide-text .btn:hover {
-            font-weight: 800;
-        }
         .hero-btn-group-2 {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -364,6 +165,39 @@
             justify-content: center;
             gap: 20px;
         }
+
+        .slider {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out, background-position-y 1s ease-in-out;
+            position: relative;
+        }
+
+        .text-content {
+            color: white;
+            text-align: center;
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 5rem;
+        }
+
+        /* Control Buttons */
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .slider-para{
+            font-size: 25px;
+        }
+
 
 
         /*For Mobiles*/
@@ -443,49 +277,26 @@
             .ceo-logo {
                 padding-top: 61px !important;
             }
-
-            /*Swiper Slider Mobile*/
-
-            .slide-text .btn:hover::after {
-                left: 0px;
-                top: 0px;
-                background-color: rgba(255, 255, 255, 0.1);
+            .slider-heading{
+                font-size: 40px;
             }
-            .slide-text {
-                width: 70%;
+            .slider-para {
+                font-size: 18px;
+                padding: 1rem;
             }
-
-            .slide-text h1 {
-                font-size: 27px;
-            }
-
-            .slide-text p {
-                font-size: 17px;
-            }
-            /* swiper arrows mobile */
-            .swiper-button-prev {
-                left: 0px;
+            .slider {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                background-position: center;
+                transition: background-image 1s ease-in-out, background-position-y 1s ease-in-out !important;
+                position: relative;
+                will-change: background-image, background-position-y; /* Optimize for performance */
+                background-color: #000; /* Fallback background color */
             }
 
-            .swiper-button-next {
-                right: 0px;
-            }
-
-            .swiper-button-prev:hover span {
-                left: 50%;
-            }
-
-            .swiper-button-next:hover span {
-                right: 50%;
-            }
-
-            .swiper-button-prev:hover span:after,
-            .swiper-button-next:hover span:after {
-                display: none;
-            }
-            .swiper-container {
-                height: 700px;
-            }
 
         }
 
@@ -493,94 +304,22 @@
     </style>
 
     <div id="scrollsmoother-container">
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slider -->
-                <!-- Slide1 -->
-                <div class="swiper-slide" style="background-image: url('assets/slider/s1.jpg')">
-                    <div class="slide-text">
-                        <h1>BOLD FLAVORS, <span style="color: #f05b2a;">SOCIALS EVENTS,</span> GROUP ECONOMICS</h1>
-                        <p>
-                            At 80/20 Eatery, it’s more than just business—it’s a lifestyle. Let’s eat, connect, and build something epic.
-                        </p>
-                        <h4 class="pb-5">
-                            5725 NORTHAMPTON BLVD, VIRGINIA BEACH VA 23455
-                        </h4>
-                        <div class="hero-btn-group-2">
-                            <a href="/directory" class="primary-btn" style="border-radius: 10px;width: 123px;">Directory</a>
-                            <a href="javascript:void(0);" class="primary-btn" style="border-radius: 10px;width: 123px;">Events</a>
-                        </div>
-                    </div>
+        <div class="slider">
+            <div class="text-content">
+                <h1 class="slider-heading">BOLD FLAVORS, <span style="color: #f05b2a;">SOCIALS EVENTS,</span> GROUP ECONOMICS</h1>
+                <p class="slider-para">
+                    At 80/20 Eatery, it’s more than just business—it’s a lifestyle. Let’s eat, connect, and build something epic.
+                </p>
+                <h4 class="pb-5">
+                    5725 NORTHAMPTON BLVD, VIRGINIA BEACH VA 23455
+                </h4>
+                <div class="hero-btn-group-2">
+                    <a href="/directory" class="primary-btn" style="border-radius: 10px;width: 123px;">Directory</a>
+                    <a href="javascript:void(0);" class="primary-btn" style="border-radius: 10px;width: 123px;">Events</a>
                 </div>
-                <!-- END Slide1 -->
-                <!-- Slide2 -->
-{{--                <div class="swiper-slide" style="background-image: url('assets/slider/s2.jpg')">--}}
-{{--                    <div class="slide-text">--}}
-{{--                        <h1>Here goes a second headline</h1>--}}
-{{--                        <p>And another little description.</p>--}}
-
-{{--                    </div>--}}
-{{--                </div>--}}
-                <!-- END Slide2 -->
-
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"><span></span></div>
-            <div class="swiper-button-next"><span></span></div>
-
         </div>
 
-
-        <!-- brand area starts -->
-        {{--    <section class="brand-area pt-50 pb-50"> --}}
-        {{--        <div class="container-fluid"> --}}
-        {{--            <div class="row"> --}}
-        {{--                <div class="col-lg-12"> --}}
-        {{--                    <div class="brand-slider"> --}}
-        {{--                        <div class="brand-single"> --}}
-        {{--                            <div class="brand-logo"> --}}
-        {{--                                <img class="dark-version ceo-logo" src="assets/brand/ceo.png" alt="brand-logo"> --}}
-        {{--                            </div> --}}
-        {{--                        </div> --}}
-        {{--                        <div class="brand-single"> --}}
-        {{--                            <div class="brand-logo"> --}}
-        {{--                                <img class="dark-version ceo-logo" src="assets/brand/juicebar.png" alt="brand-logo"> --}}
-        {{--                            </div> --}}
-        {{--                        </div> --}}
-        {{--                        <div class="brand-single"> --}}
-        {{--                            <div class="brand-logo"> --}}
-        {{--                                <img class="dark-version ceo-logo" src="assets/brand/ceo.png" alt="brand-logo"> --}}
-        {{--                            </div> --}}
-        {{--                        </div> --}}
-        {{--                        <div class="brand-single"> --}}
-        {{--                            <div class="brand-logo"> --}}
-        {{--                                <img class="dark-version ceo-logo" src="assets/brand/juicebar.png" alt="brand-logo"> --}}
-        {{--                            </div> --}}
-        {{--                        </div> --}}
-        {{--                        <div class="brand-single"> --}}
-        {{--                            <div class="brand-logo"> --}}
-        {{--                                <img class="dark-version ceo-logo" src="assets/brand/ceo.png" alt="brand-logo"> --}}
-        {{--                            </div> --}}
-        {{--                        </div> --}}
-        {{--                        <div class="brand-single"> --}}
-        {{--                            <div class="brand-logo"> --}}
-        {{--                                <img class="dark-version ceo-logo" src="assets/brand/juicebar.png" alt="brand-logo"> --}}
-        {{--                            </div> --}}
-        {{--                        </div> --}}
-        {{--                        <div class="brand-single"> --}}
-        {{--                            <div class="brand-logo"> --}}
-        {{--                                <img class="dark-version ceo-logo" src="assets/brand/juicebar.png" alt="brand-logo"> --}}
-        {{--                            </div> --}}
-        {{--                        </div> --}}
-        {{--                    </div> --}}
-        {{--                </div> --}}
-        {{--            </div> --}}
-        {{--        </div> --}}
-        {{--    </section> --}}
 
 
         <section class="brand-home-2 pt-120" style="border-bottom: 4px solid #e1612e;border-top: 4px solid #e1612e;">

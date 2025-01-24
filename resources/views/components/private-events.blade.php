@@ -3,70 +3,30 @@
 
     <style>
 
-        span.pricing-ceo {
-            font-size: 33px;
-            color: #e2612e;
-        }
         .requirement-list li {
             color: #ffffff;
             font-size: 21px;
             display: flex;
         }
+
         .requirement-list li span {
             color: #ffff00;
             margin: 0;
             padding-right: 13px;
         }
-        .main .container {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 3rem;
-        }
 
-        /*Gallery CSS*/
 
-        .main .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 3rem;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-        }
-        .main .card {
-            color: #252a32;
-            border-radius: 2px;
-            background: #ffffff;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-        }
-        .main .card-image {
-            position: relative;
-            display: block;
-            width: 100%;
-            padding-top: 70%;
-            background: #ffffff;
-        }
-        .main .card-image img {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 3px solid white;
-        }
 
-        @media only screen and (min-width: 360px) and (max-width: 740px),
-        only screen and (min-width: 412px) and (max-width: 915px),
-        only screen and (min-width: 767px) and (max-width: 991px) {
+        @media only screen and (min-width: 360px) and (max-width: 740px), only screen and (min-width: 412px) and (max-width: 915px), only screen and (min-width: 767px) and (max-width: 991px) {
 
             span.pricing-ceo {
                 font-size: 26px;
             }
+
             .cta-box {
                 background-position: left;
             }
+
             .main .container {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -80,8 +40,8 @@
     <div id="scrollsmoother-container">
 
         <!-- breadcrumb starts -->
-        <section class="breadcrumb-section" style="background-image: url(assets/images/breadcrumb-bg.png)">
-            <div class="container">
+        <section class="breadcrumb-section" style="background-image: url('assets/workspace/w3.jpg')">
+            <div class="container bread-container">
                 <div class="row">
                     <div class="col-12">
                         <h1>Private Events</h1>
@@ -97,45 +57,38 @@
 
         <!-- Images section starts -->
         <section class="welcome-section-about pt-110 pb-80">
-            <main class="main pt-50">
-                <div class="container">
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="{{ asset('assets/events/p1.jpg') }}" data-fancybox="events" data-caption="Caption Images 211">
-                                <img src="{{ asset('assets/events/p1.jpg') }}" alt="Image Gallery">
-                            </a>
+
+            <div class="container">
+                <div class="swiper-container swiper-full-mobile swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/events/p1.jpg') }}" alt="">
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="{{ asset('assets/events/p2.jpg') }}" data-fancybox="events" data-caption="Caption Images 1">
-                                <img src="{{ asset('assets/events/p2.jpg') }}" alt="Image Gallery">
-                            </a>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/events/p2.jpg') }}" alt="">
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="{{ asset('assets/events/p3.jpg') }}" data-fancybox="events" data-caption="Caption Images 1">
-                                <img src="{{ asset('assets/events/p3.jpg') }}" alt="Image Gallery">
-                            </a>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/events/p3.jpg') }}" alt="">
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="{{ asset('assets/events/p5.jpg') }}" data-fancybox="events" data-caption="Caption Images 1">
-                                <img src="{{ asset('assets/events/p5.jpg') }}" alt="Image Gallery">
-                            </a>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/events/p5.jpg') }}" alt="">
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="{{ asset('assets/events/p6.jpg') }}" data-fancybox="events" data-caption="Caption Images 1">
-                                <img src="{{ asset('assets/events/p6.jpg') }}" alt="Image Gallery">
-                            </a>
+                        <div class="swiper-slide">
+                            <img
+                                src="{{ asset('assets/events/p6.jpg') }}"
+                                alt="">
                         </div>
+
                     </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-            </main>
+            </div>
+
         </section>
 
         <!-- private section starts -->
@@ -150,7 +103,9 @@
                             </h2>
 
                             <p class="abr-para pt-2">
-                                Looking for the ultimate spot to host your private event? 80/20 Eatery has you covered. Whether it’s a corporate mixer, birthday bash, networking event, or a night to vibe with your people, our dynamic space sets the stage for unforgettable experiences.
+                                Looking for the ultimate spot to host your private event? 80/20 Eatery has you covered.
+                                Whether it’s a corporate mixer, birthday bash, networking event, or a night to vibe with
+                                your people, our dynamic space sets the stage for unforgettable experiences.
                             </p>
 
                             <h2 class="pt-5 text-white pb-2">
@@ -159,12 +114,15 @@
 
                             <h4 class="text-orange pt-4">Lively Atmosphere:</h4>
                             <p class="abr-para pt-2">
-                                Looking for the ultimate spot to host your private event? 80/20 Eatery has you covered. Whether it’s a corporate mixer, birthday bash, networking event, or a night to vibe with your people, our dynamic space sets the stage for unforgettable experiences.
+                                Looking for the ultimate spot to host your private event? 80/20 Eatery has you covered.
+                                Whether it’s a corporate mixer, birthday bash, networking event, or a night to vibe with
+                                your people, our dynamic space sets the stage for unforgettable experiences.
                             </p>
 
                             <h4 class="text-orange pt-4">Amazing Food & Drinks:</h4>
                             <p class="abr-para pt-2">
-                                Access to four unique restaurants, a full-service juice bar, and customizable catering options.
+                                Access to four unique restaurants, a full-service juice bar, and customizable catering
+                                options.
                             </p>
 
                             <h4 class="text-orange pt-4">Flexible Spaces:</h4>
@@ -174,7 +132,8 @@
 
                             <h4 class="text-orange pt-4">Entertainment Extras:</h4>
                             <p class="abr-para pt-2">
-                                Hookah, music, and the option to incorporate content creation or podcast rooms for a unique twist.
+                                Hookah, music, and the option to incorporate content creation or podcast rooms for a
+                                unique twist.
                             </p>
 
                             <h4 class="text-orange pt-4">Expert Support:</h4>
@@ -187,7 +146,9 @@
                             </h2>
 
                             <p class="abr-para pt-2">
-                                Are you an 80/20 CEO Member? Enjoy 50% off your private event space rental as part of your membership benefits. It’s our way of helping you celebrate, connect, and build community while staying on top of your game.
+                                Are you an 80/20 CEO Member? Enjoy 50% off your private event space rental as part of
+                                your membership benefits. It’s our way of helping you celebrate, connect, and build
+                                community while staying on top of your game.
                             </p>
 
                             <h2 class="pt-5 text-white pb-2">
@@ -231,7 +192,8 @@
                         <div class="cta-box" style="border: 3px solid #ffffff;">
                             <h2 class="title_one">Book Your Event Today</h2>
                             <p class="abr-para pt-3 pb-3">
-                                Let’s make your event one to remember. Contact us now to check availability, explore catering options, and secure your date. Your perfect celebration starts here!
+                                Let’s make your event one to remember. Contact us now to check availability, explore
+                                catering options, and secure your date. Your perfect celebration starts here!
                             </p>
                             <a href="/contact" class="primary-btn">Book Now <span><i class="ri-arrow-right-up-line"></i></span></a>
                         </div>

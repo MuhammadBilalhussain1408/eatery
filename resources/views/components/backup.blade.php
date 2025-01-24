@@ -108,3 +108,188 @@
     </div>
 
 </section>
+
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slider -->
+        <!-- Slide1 -->
+        <div class="swiper-slide" style="background-image: url('assets/slider/slider1.jpg')">
+            <div class="slide-text">
+                <h1>BOLD FLAVORS, <span style="color: #f05b2a;">SOCIALS EVENTS,</span> GROUP ECONOMICS</h1>
+                <p>
+                    At 80/20 Eatery, it’s more than just business—it’s a lifestyle. Let’s eat, connect, and build something epic.
+                </p>
+                <h4 class="pb-5">
+                    5725 NORTHAMPTON BLVD, VIRGINIA BEACH VA 23455
+                </h4>
+                <div class="hero-btn-group-2">
+                    <a href="/directory" class="primary-btn" style="border-radius: 10px;width: 123px;">Directory</a>
+                    <a href="javascript:void(0);" class="primary-btn" style="border-radius: 10px;width: 123px;">Events</a>
+                </div>
+            </div>
+        </div>
+        <!-- END Slide1 -->
+        <!-- Slide2 -->
+        <div class="swiper-slide" style="background-image: url('assets/slider/slider2.jpg');background-position-y: 25%;" >
+            <div class="slide-text">
+                <h1>BOLD FLAVORS, <span style="color: #f05b2a;">SOCIALS EVENTS,</span> GROUP ECONOMICS</h1>
+                <p>
+                    At 80/20 Eatery, it’s more than just business—it’s a lifestyle. Let’s eat, connect, and build something epic.
+                </p>
+                <h4 class="pb-5">
+                    5725 NORTHAMPTON BLVD, VIRGINIA BEACH VA 23455
+                </h4>
+                <div class="hero-btn-group-2">
+                    <a href="/directory" class="primary-btn" style="border-radius: 10px;width: 123px;">Directory</a>
+                    <a href="javascript:void(0);" class="primary-btn" style="border-radius: 10px;width: 123px;">Events</a>
+                </div>
+            </div>
+        </div>
+        <!-- END Slide2 -->
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"><span></span></div>
+    <div class="swiper-button-next"><span></span></div>
+
+</div>
+
+<!-- brand area starts -->
+<section class="brand-area pt-50 pb-50">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="brand-slider">
+                    <div class="brand-single">
+                        <div class="brand-logo">
+                            <img class="dark-version ceo-logo" src="assets/brand/ceo.png" alt="brand-logo">
+                        </div>
+                    </div>
+                    <div class="brand-single">
+                        <div class="brand-logo">
+                            <img class="dark-version ceo-logo" src="assets/brand/juicebar.png" alt="brand-logo">
+                        </div>
+                    </div>
+                    <div class="brand-single">
+                        <div class="brand-logo">
+                            <img class="dark-version ceo-logo" src="assets/brand/ceo.png" alt="brand-logo">
+                        </div>
+                    </div>
+                    <div class="brand-single">
+                        <div class="brand-logo">
+                            <img class="dark-version ceo-logo" src="assets/brand/juicebar.png" alt="brand-logo">
+                        </div>
+                    </div>
+                    <div class="brand-single">
+                        <div class="brand-logo">
+                            <img class="dark-version ceo-logo" src="assets/brand/ceo.png" alt="brand-logo">
+                        </div>
+                    </div>
+                    <div class="brand-single">
+                        <div class="brand-logo">
+                            <img class="dark-version ceo-logo" src="assets/brand/juicebar.png" alt="brand-logo">
+                        </div>
+                    </div>
+                    <div class="brand-single">
+                        <div class="brand-logo">
+                            <img class="dark-version ceo-logo" src="assets/brand/juicebar.png" alt="brand-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="main pt-50">
+    <div class="container">
+        <div class="card">
+            <div class="card-image">
+                <a href="{{ asset('assets/events/p1.jpg') }}" data-fancybox="events"
+                   data-caption="Caption Images 211">
+                    <img src="{{ asset('assets/events/p1.jpg') }}" alt="Image Gallery">
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <a href="{{ asset('assets/events/p2.jpg') }}" data-fancybox="events"
+                   data-caption="Caption Images 1">
+                    <img src="{{ asset('assets/events/p2.jpg') }}" alt="Image Gallery">
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <a href="{{ asset('assets/events/p3.jpg') }}" data-fancybox="events"
+                   data-caption="Caption Images 1">
+                    <img src="{{ asset('assets/events/p3.jpg') }}" alt="Image Gallery">
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <a href="{{ asset('assets/events/p5.jpg') }}" data-fancybox="events"
+                   data-caption="Caption Images 1">
+                    <img src="{{ asset('assets/events/p5.jpg') }}" alt="Image Gallery">
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <a href="{{ asset('assets/events/p6.jpg') }}" data-fancybox="events"
+                   data-caption="Caption Images 1">
+                    <img src="{{ asset('assets/events/p6.jpg') }}" alt="Image Gallery">
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Images section starts -->
+<section class="welcome-section-about pt-110 pb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-top">
+                    <p class="abr-para pt-2">
+                        The 80/20 CEO Membership offers the ultimate workspace experience for entrepreneurs, business owners,
+                        and creatives. This all-inclusive membership provides access to high-speed Wi-Fi, private rooms for
+                        podcasting, meetings, and events, plus exclusive networking opportunities through weekly events and
+                        mixers. Members enjoy perks like discounts on printing, food, drinks, and hookah, as well as access
+                        to VIP lounges, outdoor spaces, and recreational activities like cornhole and pool. With dedicated
+                        amenities, business support, and a vibrant community, the 80/20 CEO Membership is designed to help
+                        you work smarter, connect with like-minded professionals, and balance productivity with relaxation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container swiper-full-mobile swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="{{ asset('assets/workspace/w1.jpg') }}" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('assets/workspace/w2.jpg') }}" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('assets/workspace/w3.jpg') }}" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('assets/workspace/w4.jpg') }}" alt="">
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>

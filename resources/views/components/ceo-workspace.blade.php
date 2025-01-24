@@ -153,40 +153,6 @@
             font-size: 22px;
         }
 
-        /*Gallery CSS*/
-
-        .main .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 3rem;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-        }
-        .main .card {
-            color: #252a32;
-            border-radius: 2px;
-            background: #ffffff;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-        }
-        .main .card-image {
-            position: relative;
-            display: block;
-            width: 100%;
-            padding-top: 70%;
-            background: #ffffff;
-        }
-        .main .card-image img {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 3px solid white;
-        }
-
 
         @media only screen and (min-width: 360px) and (max-width: 740px), only screen and (min-width: 412px) and (max-width: 915px), only screen and (min-width: 767px) and (max-width: 991px) {
 
@@ -238,8 +204,8 @@
     <div id="scrollsmoother-container">
 
         <!-- breadcrumb starts -->
-        <section class="breadcrumb-section" style="background-image: url(assets/images/breadcrumb-bg.png)">
-            <div class="container">
+        <section class="breadcrumb-section" style="background-image: url('assets/workspace/w2.jpg')">
+            <div class="container bread-container">
                 <div class="row">
                     <div class="col-12">
                         <h1>80/20 CEO Membership</h1>
@@ -253,58 +219,6 @@
             </div>
         </section>
 
-        <!-- Images section starts -->
-        <section class="welcome-section-about pt-110 pb-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-top">
-                            <p class="abr-para pt-2">
-                                The 80/20 CEO Membership offers the ultimate workspace experience for entrepreneurs, business owners,
-                                and creatives. This all-inclusive membership provides access to high-speed Wi-Fi, private rooms for
-                                podcasting, meetings, and events, plus exclusive networking opportunities through weekly events and
-                                mixers. Members enjoy perks like discounts on printing, food, drinks, and hookah, as well as access
-                                to VIP lounges, outdoor spaces, and recreational activities like cornhole and pool. With dedicated
-                                amenities, business support, and a vibrant community, the 80/20 CEO Membership is designed to help
-                                you work smarter, connect with like-minded professionals, and balance productivity with relaxation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <main class="main pt-50">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-image">
-                                <a href="{{ asset('assets/workspace/w1.jpg') }}" data-fancybox="workspace" data-caption="Caption Images 211">
-                                    <img src="{{ asset('assets/workspace/w1.jpg') }}" alt="Image Gallery">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image">
-                                <a href="{{ asset('assets/workspace/w2.jpg') }}" data-fancybox="workspace" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/workspace/w2.jpg') }}" alt="Image Gallery">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image">
-                                <a href="{{ asset('assets/workspace/w3.jpg') }}" data-fancybox="workspace" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/workspace/w3.jpg') }}" alt="Image Gallery">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image">
-                                <a href="{{ asset('assets/workspace/w4.jpg') }}" data-fancybox="workspace" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/workspace/w4.jpg') }}" alt="Image Gallery">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
-        </section>
 
         <!-- pricing plans content starts -->
         <section class="case-details-content pt-120 pb-110">
@@ -382,6 +296,45 @@
                         </ul>
                         <div class="plan-select btn-plan-2"><a href="https://square.link/u/EN62q9dc">Select Plan</a></div>
                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-top">
+                            <p class="abr-para pt-2">
+                                The 80/20 CEO Membership offers the ultimate workspace experience for entrepreneurs, business owners,
+                                and creatives. This all-inclusive membership provides access to high-speed Wi-Fi, private rooms for
+                                podcasting, meetings, and events, plus exclusive networking opportunities through weekly events and
+                                mixers. Members enjoy perks like discounts on printing, food, drinks, and hookah, as well as access
+                                to VIP lounges, outdoor spaces, and recreational activities like cornhole and pool. With dedicated
+                                amenities, business support, and a vibrant community, the 80/20 CEO Membership is designed to help
+                                you work smarter, connect with like-minded professionals, and balance productivity with relaxation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container swiper-full-mobile swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/workspace/w1.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/workspace/w2.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/workspace/w3.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('assets/workspace/w4.jpg') }}" alt="">
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
 
                 <!-- Section Starts -->
@@ -628,7 +581,6 @@
 
 
         </section>
-
 
 
         @include('include.foot')

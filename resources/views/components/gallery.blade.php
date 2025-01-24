@@ -72,8 +72,8 @@
     <div id="scrollsmoother-container">
 
         <!-- breadcrumb starts -->
-        <section class="breadcrumb-section" style="background-image: url(assets/images/breadcrumb-bg.png)">
-            <div class="container">
+        <section class="breadcrumb-section" style="background-image: url('assets/workspace/w3.jpg')">
+            <div class="container bread-container">
                 <div class="row">
                     <div class="col-12">
                         <h1>Gallery</h1>
