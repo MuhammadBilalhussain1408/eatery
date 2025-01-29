@@ -189,7 +189,7 @@
     <div id="scrollsmoother-container">
 
         <!-- breadcrumb starts -->
-        <section class="breadcrumb-section" style="background-image: url('assets/workspace/w3.jpg')">
+        <section class="breadcrumb-section" style="background-image: url('assets/slider/slider3.webp')">
             <div class="container bread-container">
                 <div class="row">
                     <div class="col-12">

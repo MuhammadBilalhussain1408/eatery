@@ -35,8 +35,8 @@
             position: relative;
             display: block;
             width: 100%;
-            padding-top: 70%;
             background: #ffffff;
+            height: 50vh;
         }
         .main .card-image img {
             display: block;
@@ -63,6 +63,9 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: 3rem;
+            }
+            .main .card-image {
+                height: 44vh;
             }
 
         }
@@ -106,64 +109,134 @@
                     <div class="container">
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g1.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g1.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g1.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g1.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g2.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g2.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g2.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g2.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g3.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g3.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g3.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g3.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g4.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g4.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g4.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g4.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g5.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g5.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g5.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g5.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g6.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g6.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g6.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g6.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g7.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g7.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g7.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g7.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g8.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g8.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g8.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g8.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-image">
-                                <a href="{{ asset('assets/gallery/g9.jpg') }}" data-fancybox="gallery" data-caption="Caption Images 1">
-                                    <img src="{{ asset('assets/gallery/g9.jpg') }}" alt="Image Gallery">
+                                <a href="{{ asset('assets/gallery/g9.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g9.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g10.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g10.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g11.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g11.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g12.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g12.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g13.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g13.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g14.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g14.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g15.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g15.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g16.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g16.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g17.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g17.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g18.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g18.webp') }}" alt="Image Gallery">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <a href="{{ asset('assets/gallery/g19.webp') }}" data-fancybox="gallery">
+                                    <img src="{{ asset('assets/gallery/g19.webp') }}" alt="Image Gallery">
                                 </a>
                             </div>
                         </div>

@@ -26,6 +26,7 @@ Route::view('/directory', 'components.directory');
 Route::view('/gallery', 'components.gallery');
 Route::view('/privacy-policy', 'components.privacy-policy');
 Route::view('/terms-and-conditions', 'components.terms-conditions');
+Route::view('/square-thank-you', 'components.square-thanks');
 
 
 Route::post('/save-membership', [MembershipController::class, 'store']);

@@ -139,7 +139,7 @@
             padding: 30px 20px;
         }
         .plan-select.btn-plan-1 {
-            padding-top: 17rem !important;
+            padding-top: 16.8rem !important;
         }
         .plan-select.btn-plan-2 {
             padding-top: 11.7rem !important;

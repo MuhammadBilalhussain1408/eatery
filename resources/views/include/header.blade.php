@@ -241,6 +241,7 @@
             height: 530px;
             object-fit: cover;
             border: 5px solid white;
+            border-radius: 20px !important;
 
         }
         .swiper-slide.swiper-slide-active img {

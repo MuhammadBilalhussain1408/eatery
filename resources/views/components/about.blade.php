@@ -4,7 +4,7 @@
     <div id="scrollsmoother-container">
 
         <!-- breadcrumb starts -->
-        <section class="breadcrumb-section" style="background-image: url('assets/workspace/w3.jpg')">
+        <section class="breadcrumb-section" style="background-image: url('assets/gallery/g4.webp');background-position-y: 29%;">
             <div class="container bread-container">
                 <div class="row">
                     <div class="col-12">
@@ -54,20 +54,6 @@
             </div>
         </section>
 
-        <!-- video area starts -->
-        <div class="video-home-3 video-about-page pt-5 pb-5">
-            <div class="container">
-                <div class="video-bg" style="background-image: url(assets/images/video-bg-about-page.png)">
-                    <div class="row">
-                        <div class="col-12">
-{{--                            <div class="video-wrapper">--}}
-{{--                                <a class="hero-play-btn popup-youtube" href="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span class="video-btn item-pulse"><i class="fas fa-play"></i></span></a>--}}
-{{--                            </div>--}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- marquee area starts -->
         <div class="custom-marquee marquee-style-2 pb-40">

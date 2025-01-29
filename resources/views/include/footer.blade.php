@@ -61,9 +61,9 @@
         },
 
         loop:true,
-        // autoplay: {
-        //     delay: 2000,
-        // },
+        autoplay: {
+            delay: 2000,
+        },
 
 
         keyboard: {
@@ -99,13 +99,13 @@
 
     // Array of background images
     const images = [
-        'assets/slider/slider1.jpg',
-        'assets/slider/slider2.jpg',
-        'assets/slider/slider3.jpg',
-        'assets/slider/slider4.jpg',
-        'assets/slider/slider5.jpg',
-        'assets/slider/slider6.jpg',
-        'assets/slider/slider7.jpg',
+        'assets/slider/slider1.webp',
+        'assets/slider/slider2.webp',
+        'assets/slider/slider3.webp',
+        'assets/slider/slider4.webp',
+        'assets/slider/slider5.webp',
+        'assets/slider/slider6.webp',
+        'assets/slider/slider7.webp',
     ];
 
     // Select the slider element
@@ -132,9 +132,9 @@
         slider.style.backgroundImage = `url(${images[currentIndex]})`;
 
         // Apply specific styles for certain images
-        if (images[currentIndex] === 'assets/slider/slider2.jpg') {
+        if (images[currentIndex] === 'assets/slider/slider2.webp') {
             slider.style.backgroundPositionY = '25%'; // For slider2.jpg
-        } else if (images[currentIndex] === 'assets/slider/slider5.jpg') {
+        } else if (images[currentIndex] === 'assets/slider/slider5.webp') {
             slider.style.backgroundPositionY = '0%'; // For slider5.jpg
         } else {
             slider.style.backgroundPositionY = 'center'; // Default for other images
